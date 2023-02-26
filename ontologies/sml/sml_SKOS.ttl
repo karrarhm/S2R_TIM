@@ -6,6 +6,9 @@
 @prefix time: <http://www.w3.org/2006/time#> .
 @prefix unit: <http://qudt.org/vocab/unit/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix sml-term: <https://w3id.org/sml/skos/term/> . 
+@base <https://w3id.org/sml/skos/term> .
+
 <https://w3id.org/sml/skos/term> 
  a skos:ConceptScheme ;
  owl:imports <http://qudt.org/schema/qudt> ;
