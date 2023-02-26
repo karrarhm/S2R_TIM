@@ -22,16 +22,13 @@
 sml-term:AbstractConcept
  a skos:Concept ;
  skos:broader sml-term:TopConcept ;
- skos:definition "Concept that forms a manifestation and demarcation in 
-an abstract space. An abstract concept has no life cycle"@en ;
+ skos:definition "Concept that forms a manifestation and demarcation in an abstract space. An abstract concept has no life cycle"@en ;
  skos:prefLabel "Abstract concept"@en ;
 . 
 sml-term:Activity
  a skos:Concept ;
  skos:broader sml-term:Entity ;
- skos:definition "Entity that takes place or can take place in a 
-concrete space-time. An activity transforms objects, and is executed by 
-an object"@en ;
+ skos:definition "Entity that takes place or can take place in a concrete space-time. An activity transforms objects, and is executed by an object"@en ;
  skos:prefLabel "Activity"@en ;
 . 
 sml-term:ConceptType
