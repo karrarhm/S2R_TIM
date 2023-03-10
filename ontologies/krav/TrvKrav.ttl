@@ -1,5 +1,4 @@
-@prefix : <https://www.trafikverket.se/ontologies/trvkrav/1.0.0#> .
-@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dce: <http://purl.org/dc/elements/1.1/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
@@ -11,33 +10,32 @@
 @prefix trvkrav: <https://www.trafikverket.se/ontologies/trvkrav/1.0.0#> .
 @base <https://www.trafikverket.se/ontologies/trvkrav/1.0.0> .
 
-<https://www.trafikverket.se/ontologies/trvkrav/1.0.0> rdf:type owl:Ontology ;
-                                                        owl:versionIRI <https://www.trafikverket.se/ontologies/trvkrav/1.0.0> ;
-                                                        owl:imports dc: ;
-                                                        dc:creator <http://www.trafikverket.se/> ;
-                                                        dc:title "TrvKrav" ;
-                                                        dcterms:abstract "Ontologi som representerar Trafikverkets regelverk (TRVINFRA)."@sv ;
-                                                        dcterms:created "2023-02-20"^^xsd:date ;
-                                                        dcterms:license <https://creativecommons.org/licenses/by-nd/4.0/> ;
-                                                        vann:preferredNamespacePrefix "trvkrav" ;
-                                                        vann:preferredNamespaceUri "https://www.trafikverket.se/ontologies/trvkrav/1.0.0" ;
-                                                        rdfs:isDefinedBy "Trafikverket" ;
-                                                        owl:versionInfo "1.0.0" .
+trvkrav:TrvKrav rdf:type owl:Ontology ;
+  owl:versionIRI <https://www.trafikverket.se/ontologies/trvkrav/1.0.0> ;
+  dce:creator <http://www.trafikverket.se/> ;
+  dce:title "TrvKrav" ;
+  dcterms:abstract "Ontologi som representerar Trafikverkets regelverk (TRVINFRA)."@sv ;
+  dcterms:created "2023-02-20"^^xsd:date ;
+  dcterms:license <https://creativecommons.org/licenses/by-nd/4.0/> ;
+  vann:preferredNamespacePrefix "trvkrav" ;
+  vann:preferredNamespaceUri "https://www.trafikverket.se/ontologies/trvkrav/1.0.0" ;
+  rdfs:isDefinedBy "Trafikverket" ;
+  owl:versionInfo "1.0.0" .
 
 #################################################################
 #    Annotation properties
 #################################################################
 
 ###  http://purl.org/dc/elements/1.1/creator
-dc:creator rdf:type owl:AnnotationProperty .
+dce:creator rdf:type owl:AnnotationProperty .
 
 
 ###  http://purl.org/dc/elements/1.1/date
-dc:date rdf:type owl:AnnotationProperty .
+dce:date rdf:type owl:AnnotationProperty .
 
 
 ###  http://purl.org/dc/elements/1.1/title
-dc:title rdf:type owl:AnnotationProperty .
+dce:title rdf:type owl:AnnotationProperty .
 
 
 ###  http://purl.org/dc/terms/abstract
@@ -68,41 +66,6 @@ vann:preferredNamespaceUri rdf:type owl:AnnotationProperty ;
 
 ###  http://www.w3.org/2004/02/skos/core#definition
 skos:definition rdf:type owl:AnnotationProperty .
-
-
-###  https://www.trafikverket.se/ontologies/trvkrav/1.0.0#GraphicalNotation
-trvkrav:GraphicalNotation rdf:type owl:AnnotationProperty ;
-                          rdfs:label "Graphical Notation"@en ;
-                          rdfs:subPropertyOf trvkrav:RequirementsNotation .
-
-
-###  https://www.trafikverket.se/ontologies/trvkrav/1.0.0#KravText
-trvkrav:KravText rdf:type owl:AnnotationProperty ;
-                 dc:creator "Karrar Ibrahim"^^xsd:string ;
-                 dc:date "2023-03-08T16:33:13Z"^^xsd:dateTime ;
-                 rdfs:label "Kravtext"@sv ;
-                 rdfs:subPropertyOf trvkrav:TextualNotation .
-
-
-###  https://www.trafikverket.se/ontologies/trvkrav/1.0.0#MotivText
-trvkrav:MotivText rdf:type owl:AnnotationProperty ;
-                  dc:creator "Karrar Ibrahim"^^xsd:string ;
-                  dc:date "2023-03-08T16:33:42Z"^^xsd:dateTime ;
-                  rdfs:label "Motivtext"@sv ;
-                  rdfs:subPropertyOf trvkrav:TextualNotation .
-
-
-###  https://www.trafikverket.se/ontologies/trvkrav/1.0.0#RequirementsNotation
-trvkrav:RequirementsNotation rdf:type owl:AnnotationProperty ;
-                             rdfs:domain trvkrav:Requirements .
-
-
-###  https://www.trafikverket.se/ontologies/trvkrav/1.0.0#TextualNotation
-trvkrav:TextualNotation rdf:type owl:AnnotationProperty ;
-                        dc:creator "Karrar Ibrahim"^^xsd:string ;
-                        dc:date "2023-03-08T16:05:00Z"^^xsd:dateTime ;
-                        rdfs:label "Textual Notation"@en ;
-                        rdfs:subPropertyOf trvkrav:RequirementsNotation .
 
 
 ###  https://www.trafikverket.se/ontologies/trvkrav/1.0.0#categoryIdentifier
@@ -144,15 +107,82 @@ trvkrav:hasRequirement rdf:type owl:ObjectProperty ,
                                 owl:FunctionalProperty ;
                        rdfs:domain trvkrav:Asset ;
                        rdfs:range trvkrav:Requirements ;
-                       dc:creator "Karrar Ibrahim"^^xsd:string ;
-                       dc:date "2023-03-08T09:59:53Z"^^xsd:dateTime .
+                       dce:creator "Karrar Ibrahim"^^xsd:string ;
+                       dce:date "2023-03-08T09:59:53Z"^^xsd:dateTime .
 
 
 ###  https://www.trafikverket.se/ontologies/trvkrav/1.0.0#isExpressedWith
 trvkrav:isExpressedWith rdf:type owl:ObjectProperty ;
                         rdfs:domain trvkrav:Requirements ;
-                        dc:creator "Karrar Ibrahim"^^xsd:string ;
-                        dc:date "2023-03-08T13:56:24Z"^^xsd:dateTime .
+                        rdfs:range [ rdf:type owl:Restriction ;
+                                     owl:onProperty trvkrav:Graphical ;
+                                     owl:someValuesFrom owl:rational
+                                   ] ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty trvkrav:Textual ;
+                                     owl:someValuesFrom owl:rational
+                                   ] ;
+                        dce:creator "Karrar Ibrahim"^^xsd:string ;
+                        dce:date "2023-03-08T13:56:24Z"^^xsd:dateTime .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  https://www.trafikverket.se/ontologies/trvkrav/1.0.0#Graphical
+trvkrav:Graphical rdf:type owl:DatatypeProperty ;
+                  rdfs:subPropertyOf trvkrav:RequirementNotation ;
+                  rdfs:domain trvkrav:Requirements ;
+                  owl:propertyDisjointWith trvkrav:Textual ;
+                  rdfs:label "Grafisk"@sv .
+
+
+###  https://www.trafikverket.se/ontologies/trvkrav/1.0.0#Identifier
+trvkrav:Identifier rdf:type owl:DatatypeProperty ;
+                   rdfs:subPropertyOf trvkrav:RequirementsProperties ;
+                   rdfs:domain trvkrav:Requirements ;
+                   rdfs:label "Identifierare"@sv ;
+                   skos:definition "En identifierare är ett namn som identifierar (det vill säga märker identiteten för) antingen ett unikt objekt eller en unik klass av objekt."@sv .
+
+
+###  https://www.trafikverket.se/ontologies/trvkrav/1.0.0#MotiveText
+trvkrav:MotiveText rdf:type owl:DatatypeProperty ;
+                   rdfs:subPropertyOf trvkrav:Textual ;
+                   rdfs:domain trvkrav:Requirements ;
+                   owl:propertyDisjointWith trvkrav:RequirementText ;
+                   rdfs:label "Motivtext"@sv .
+
+
+###  https://www.trafikverket.se/ontologies/trvkrav/1.0.0#RequirementNotation
+trvkrav:RequirementNotation rdf:type owl:DatatypeProperty ;
+                            rdfs:subPropertyOf trvkrav:RequirementsProperties ;
+                            rdfs:label "Kravnotation"@sv .
+
+
+###  https://www.trafikverket.se/ontologies/trvkrav/1.0.0#RequirementText
+trvkrav:RequirementText rdf:type owl:DatatypeProperty ;
+                        rdfs:subPropertyOf trvkrav:Textual ;
+                        rdfs:domain trvkrav:Requirements ;
+                        rdfs:label "Kravtext"@sv .
+
+
+###  https://www.trafikverket.se/ontologies/trvkrav/1.0.0#RequirementsProperties
+trvkrav:RequirementsProperties rdf:type owl:DatatypeProperty ;
+                               rdfs:label "Krav egenskaper"@sv .
+
+
+###  https://www.trafikverket.se/ontologies/trvkrav/1.0.0#Textual
+trvkrav:Textual rdf:type owl:DatatypeProperty ;
+                rdfs:subPropertyOf trvkrav:RequirementNotation ;
+                rdfs:label "Textuell"@sv .
+
+
+###  https://www.trafikverket.se/ontologies/trvkrav/1.0.0#Title
+trvkrav:Title rdf:type owl:DatatypeProperty ;
+              rdfs:subPropertyOf trvkrav:RequirementsProperties ;
+              rdfs:domain trvkrav:Requirements ;
+              rdfs:label "Rubrik"@sv .
 
 
 #################################################################
@@ -161,63 +191,66 @@ trvkrav:isExpressedWith rdf:type owl:ObjectProperty ;
 
 ###  https://www.trafikverket.se/ontologies/trvkrav/1.0.0#Asset
 trvkrav:Asset rdf:type owl:Class ;
-              dc:creator "Karrar Ibrahim"^^xsd:string ;
-              dc:date "2023-03-08T09:56:47Z"^^xsd:dateTime ;
-              rdfs:label "Asset"@en .
+              dce:creator "Karrar Ibrahim"^^xsd:string ;
+              dce:date "2023-03-08T09:56:47Z"^^xsd:dateTime ;
+              rdfs:label "Asset"@en ,
+                         "Tillgång"@sv .
 
 
 ###  https://www.trafikverket.se/ontologies/trvkrav/1.0.0#Component
 trvkrav:Component rdf:type owl:Class ;
                   rdfs:subClassOf trvkrav:Asset ;
-                  dc:creator "Karrar Ibrahim"^^xsd:string ;
-                  dc:date "2023-03-08T09:59:06Z"^^xsd:dateTime ;
-                  rdfs:label "Component"@en .
+                  dce:creator "Karrar Ibrahim"^^xsd:string ;
+                  dce:date "2023-03-08T09:59:06Z"^^xsd:dateTime ;
+                  rdfs:label "Component"@en ;
+                  trvkrav:isCategory "true"^^xsd:boolean .
 
 
 ###  https://www.trafikverket.se/ontologies/trvkrav/1.0.0#ConstructionRequirement
 trvkrav:ConstructionRequirement rdf:type owl:Class ;
                                 rdfs:subClassOf trvkrav:TechnicalRequirement ;
-                                dc:creator "Karrar Ibrahim"^^xsd:string ;
-                                dc:date "2023-03-08T09:47:56Z"^^xsd:dateTime ;
+                                dce:creator "Karrar Ibrahim"^^xsd:string ;
+                                dce:date "2023-03-08T09:47:56Z"^^xsd:dateTime ;
                                 rdfs:label "Construction requirement"@en .
 
 
 ###  https://www.trafikverket.se/ontologies/trvkrav/1.0.0#DesignRequirement
 trvkrav:DesignRequirement rdf:type owl:Class ;
                           rdfs:subClassOf trvkrav:TechnicalRequirement ;
-                          dc:creator "Karrar Ibrahim"^^xsd:string ;
-                          dc:date "2023-03-08T09:47:27Z"^^xsd:dateTime ;
+                          dce:creator "Karrar Ibrahim"^^xsd:string ;
+                          dce:date "2023-03-08T09:47:27Z"^^xsd:dateTime ;
                           rdfs:label "Design requirement"@en .
 
 
 ###  https://www.trafikverket.se/ontologies/trvkrav/1.0.0#FunctionalRequirement
 trvkrav:FunctionalRequirement rdf:type owl:Class ;
                               rdfs:subClassOf trvkrav:Requirements ;
-                              dc:creator "Karrar Ibrahim"^^xsd:string ;
-                              dc:date "2023-03-08T09:55:44Z"^^xsd:dateTime ;
+                              dce:creator "Karrar Ibrahim"^^xsd:string ;
+                              dce:date "2023-03-08T09:55:44Z"^^xsd:dateTime ;
                               rdfs:label "Functional requirement"@en .
 
 
 ###  https://www.trafikverket.se/ontologies/trvkrav/1.0.0#FunctionalSystem
 trvkrav:FunctionalSystem rdf:type owl:Class ;
                          rdfs:subClassOf trvkrav:Asset ;
-                         dc:creator "Karrar Ibrahim"^^xsd:string ;
-                         dc:date "2023-03-08T09:58:11Z"^^xsd:dateTime ;
-                         rdfs:label "Functional system"@en .
+                         dce:creator "Karrar Ibrahim"^^xsd:string ;
+                         dce:date "2023-03-08T09:58:11Z"^^xsd:dateTime ;
+                         rdfs:label "Functional system"@en ;
+                         trvkrav:isCategory "true"^^xsd:boolean .
 
 
 ###  https://www.trafikverket.se/ontologies/trvkrav/1.0.0#InformationRequirement
 trvkrav:InformationRequirement rdf:type owl:Class ;
                                rdfs:subClassOf trvkrav:Requirements ;
-                               dc:creator "Karrar Ibrahim"^^xsd:string ;
-                               dc:date "2023-03-08T09:48:41Z"^^xsd:dateTime ;
+                               dce:creator "Karrar Ibrahim"^^xsd:string ;
+                               dce:date "2023-03-08T09:48:41Z"^^xsd:dateTime ;
                                rdfs:label "Information requirement"@en .
 
 
 ###  https://www.trafikverket.se/ontologies/trvkrav/1.0.0#Requirements
 trvkrav:Requirements rdf:type owl:Class ;
-                     dc:creator "Karrar Ibrahim"^^xsd:string ;
-                     dc:date "2023-03-08T08:42:22Z"^^xsd:dateTime ;
+                     dce:creator "Karrar Ibrahim"^^xsd:string ;
+                     dce:date "2023-03-08T08:42:22Z"^^xsd:dateTime ;
                      rdfs:label "Krav"@sv ,
                                 "Requirements"@en ;
                      skos:definition "ett uttryck som förmedlar ett behov med dess begränsningar och villkor."@sv .
@@ -226,24 +259,26 @@ trvkrav:Requirements rdf:type owl:Class ;
 ###  https://www.trafikverket.se/ontologies/trvkrav/1.0.0#SpatialElement
 trvkrav:SpatialElement rdf:type owl:Class ;
                        rdfs:subClassOf trvkrav:Asset ;
-                       dc:creator "Karrar Ibrahim"^^xsd:string ;
-                       dc:date "2023-03-08T09:57:43Z"^^xsd:dateTime ;
-                       rdfs:label "Spatial element"@en .
+                       dce:creator "Karrar Ibrahim"^^xsd:string ;
+                       dce:date "2023-03-08T09:57:43Z"^^xsd:dateTime ;
+                       rdfs:label "Spatial element"@en ;
+                       trvkrav:isCategory "true"^^xsd:boolean .
 
 
 ###  https://www.trafikverket.se/ontologies/trvkrav/1.0.0#StructuralSystem
 trvkrav:StructuralSystem rdf:type owl:Class ;
                          rdfs:subClassOf trvkrav:Asset ;
-                         dc:creator "Karrar Ibrahim"^^xsd:string ;
-                         dc:date "2023-03-08T09:58:41Z"^^xsd:dateTime ;
-                         rdfs:label "Structural system"@en .
+                         dce:creator "Karrar Ibrahim"^^xsd:string ;
+                         dce:date "2023-03-08T09:58:41Z"^^xsd:dateTime ;
+                         rdfs:label "Structural system"@en ;
+                         trvkrav:isCategory "true"^^xsd:boolean .
 
 
 ###  https://www.trafikverket.se/ontologies/trvkrav/1.0.0#TechnicalRequirement
 trvkrav:TechnicalRequirement rdf:type owl:Class ;
                              rdfs:subClassOf trvkrav:Requirements ;
-                             dc:creator "Karrar Ibrahim"^^xsd:string ;
-                             dc:date "2023-03-08T09:46:51Z"^^xsd:dateTime ;
+                             dce:creator "Karrar Ibrahim"^^xsd:string ;
+                             dce:date "2023-03-08T09:46:51Z"^^xsd:dateTime ;
                              rdfs:label "Technical requirement"@en .
 
 
@@ -251,25 +286,15 @@ trvkrav:TechnicalRequirement rdf:type owl:Class ;
 #    Individuals
 #################################################################
 
-###  https://www.trafikverket.se/ontologies/trvkrav/1.0.0#BallasteradBanöverbyggnad
-trvkrav:BallasteradBanöverbyggnad rdf:type owl:NamedIndividual ,
-                                           trvkrav:StructuralSystem ;
-                                  dc:creator "Karrar Ibrahim"^^xsd:string ;
-                                  dc:date "2023-03-08T16:19:17Z"^^xsd:dateTime ;
-                                  rdfs:label "Ballasterad banöverbyggnad"@sv .
-
-
 ###  https://www.trafikverket.se/ontologies/trvkrav/1.0.0#683664
-<https://www.trafikverket.se/ontologies/trvkrav/1.0.0#683664> rdf:type owl:NamedIndividual ,
-                                                                       trvkrav:ConstructionRequirement ;
-                                                              dc:creator "Karrar Ibrahim"^^xsd:string ;
-                                                              dc:date "2023-03-08T16:29:35Z"^^xsd:dateTime ;
-                                                              dc:title "Dimensionering av spårkonstruktioner"@sv ;
-                                                              trvkrav:KravText "Makadamballasts motstånd mot fragmentering ska minst uppfylla kraven för kategori LARB16 (Los Angelesvärde ≤ 16 vikt-%), vilket ersätter krav i TDOK 2014:0759, kap 6.2.2.1."@sv ;
-                                                              trvkrav:MotivText """Eftersom det för våra nuvarande banor finns sträckor där problem med nedkrossning förekommer har kravet för NS höjts i syfte att säkerställa en begränsad risk för nedkrossning.
+trvkrav:683664 rdf:type owl:NamedIndividual ,
+  trvkrav:ConstructionRequirement ;
+  trvkrav:Identifier "682919"^^xsd:string ;
+  trvkrav:MotiveText """Eftersom det för våra nuvarande banor finns sträckor där problem med nedkrossning förekommer har kravet för NS höjts i syfte att säkerställa en begränsad risk för nedkrossning.
 
-Information: Utredning har inletts som ett FUD-uppdrag hos SGI att titta på nedkrossning av makadamballast. Resultat från detta uppdrag förväntas under första delen av 2021. Resultatet kan bli att nuvarande krav LARB20 är tillräckligt."""@sv ;
-                                                              trvkrav:identifier 682919 .
+Information: Utredning har inletts som ett FUD-uppdrag hos SGI att titta på nedkrossning av makadamballast. Resultat från detta uppdrag förväntas under första delen av 2021. Resultatet kan bli att nuvarande krav LARB20 är tillräckligt."""^^xsd:string ;
+  trvkrav:RequirementText "Makadamballasts motstånd mot fragmentering ska minst uppfylla kraven för kategori LARB16 (Los Angelesvärde ≤ 16 vikt-%), vilket ersätter krav i TDOK 2014:0759, kap 6.2.2.1."^^xsd:string ;
+  trvkrav:Title "Dimensionering av spårkonstruktioner"^^xsd:string .
 
 
 #################################################################
