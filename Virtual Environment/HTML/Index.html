@@ -1,21 +1,38 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Example Page with Iframe</title>
+	<title>Embedded Speckle Viewport</title>
 	<style>
+		body {
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+		}
+
 		iframe {
 			position: fixed;
 			top: 50%;
 			left: 50%;
 			transform: translate(-50%, -50%);
-			width: 70%;
-			height: 70%;
+			width: 90%;
+			height: 80%;
+			border: none;
+		}
+
+		.logo {
+			position: fixed;
+			top: 1%;
+			left: 5%;
+			height: 85px;
+			width: 130px;
 		}
 	</style>
 </head>
 <body>
-
-	<!-- Here's the iframe -->
-	<iframe src="https://speckle.xyz/embed?stream=f89998e73d&commit=e5d338d8f9&c=%5B126174.7636%2C6549797.84785%2C37.93599%2C126289.8009%2C6550134.94127%2C30.70801%2C0%2C1%5D&autoload=true&hidesidebar=true" frameborder="0"></iframe>
+	<div class="logo">
+		<a href="https://www.trafikverket.se" target="_self"><img src="https://www.trafikverket.se/contentassets/d8ca1da136844608a07a850a75a7168b/trafikverket-logo.svg" alt="Trafikverket logo" width="100%"></a>
+	</div>
+	<iframe src="https://speckle.xyz/embed?stream=f89998e73d&commit=e5d338d8f9&c=%5B126174.7636%2C6549797.84785%2C37.93599%2C126289.8009%2C6550134.94127%2C30.70801%2C0%2C1%5D&autoload=true" frameborder="0"></iframe>
 </body>
 </html>
+
