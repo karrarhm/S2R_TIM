@@ -1,3 +1,4 @@
+@prefix : <https://www.trafikverket.se/ontologies/trvkrav#> .
 @prefix dce: <http://purl.org/dc/elements/1.1/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -6,11 +7,14 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix vann: <http://purl.org/vocab/vann/> .
+@prefix TrvKrav: <https://www.trafikverket.se/ontologies/trvkrav> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix trvkrav: <https://www.trafikverket.se/ontologies/trvkrav#> .
+@prefix trvkrav: <https://www.trafikverket.se/ontologies/trvkrav/> .
+@prefix trvclass: <https://www.trafikverket.se/ontologies/classification_81346_2/> .
 @base <https://www.trafikverket.se/ontologies/trvkrav> .
 
 <https://www.trafikverket.se/ontologies/trvkrav> rdf:type owl:Ontology ;
+                                                  owl:imports trvclass: ;
                                                   dce:creator <http://www.trafikverket.se/> ;
                                                   dce:title "TrvKrav" ;
                                                   dcterms:abstract "Ontologi som representerar Trafikverkets regelverk (TRVINFRA)."@sv ;
@@ -67,32 +71,32 @@ vann:preferredNamespaceUri rdf:type owl:AnnotationProperty ;
 skos:definition rdf:type owl:AnnotationProperty .
 
 
-###  https://www.trafikverket.se/ontologies/trvkrav#categoryIdentifier
+###  https://www.trafikverket.se/ontologies/trvkrav/categoryIdentifier
 trvkrav:categoryIdentifier rdf:type owl:AnnotationProperty ;
                            rdfs:label "Kategori"@sv ;
                            skos:definition "Representerar identifierare (Identifier) för den kategori en klass tillhör så som dessa begrepp är definierade i TrvKrav."@sv .
 
 
-###  https://www.trafikverket.se/ontologies/trvkrav#example
+###  https://www.trafikverket.se/ontologies/trvkrav/example
 trvkrav:example rdf:type owl:AnnotationProperty ;
                 rdfs:label "Exempel"@sv ;
                 skos:definition "Representerar exempel (Example) på en klass eller klass-kategori så som dessa begrepp är definierade i TrvKrav."@sv .
 
 
-###  https://www.trafikverket.se/ontologies/trvkrav#identifier
+###  https://www.trafikverket.se/ontologies/trvkrav/identifier
 trvkrav:identifier rdf:type owl:AnnotationProperty ;
                    rdfs:label "Identifierare"@sv ,
                               "identifier"@en ;
                    skos:definition "Representerar identifierare (Identifier) för en klass, klass-kategori, egenskap samt egenskaps-kategori så som dessa begrepp är definierade i TrvKrav."@sv .
 
 
-###  https://www.trafikverket.se/ontologies/trvkrav#isCategory
+###  https://www.trafikverket.se/ontologies/trvkrav/isCategory
 trvkrav:isCategory rdf:type owl:AnnotationProperty ;
                    rdfs:label "Är en Kategori"@sv ;
                    skos:definition "Används för att skilja klass-kategori från klass respektive egenskaps-kategori från egenskap så som dessa begrepp är definierade i TrvKrav."@sv .
 
 
-###  https://www.trafikverket.se/ontologies/trvkrav#note
+###  https://www.trafikverket.se/ontologies/trvkrav/note
 trvkrav:note rdf:type owl:AnnotationProperty ;
              rdfs:label "Anmärkning"@sv .
 
@@ -101,7 +105,7 @@ trvkrav:note rdf:type owl:AnnotationProperty ;
 #    Object Properties
 #################################################################
 
-###  https://www.trafikverket.se/ontologies/trvkrav#hasRequirement
+###  https://www.trafikverket.se/ontologies/trvkrav/hasRequirement
 trvkrav:hasRequirement rdf:type owl:ObjectProperty ,
                                 owl:FunctionalProperty ;
                        rdfs:domain trvkrav:Asset ;
@@ -110,7 +114,7 @@ trvkrav:hasRequirement rdf:type owl:ObjectProperty ,
                        dce:date "2023-03-08T09:59:53Z"^^xsd:dateTime .
 
 
-###  https://www.trafikverket.se/ontologies/trvkrav#isExpressedWith
+###  https://www.trafikverket.se/ontologies/trvkrav/isExpressedWith
 trvkrav:isExpressedWith rdf:type owl:ObjectProperty ;
                         rdfs:domain trvkrav:Requirements ;
                         rdfs:range [ rdf:type owl:Restriction ;
@@ -129,7 +133,7 @@ trvkrav:isExpressedWith rdf:type owl:ObjectProperty ;
 #    Data properties
 #################################################################
 
-###  https://www.trafikverket.se/ontologies/trvkrav#Graphical
+###  https://www.trafikverket.se/ontologies/trvkrav/Graphical
 trvkrav:Graphical rdf:type owl:DatatypeProperty ;
                   rdfs:subPropertyOf trvkrav:RequirementNotation ;
                   rdfs:domain trvkrav:Requirements ;
@@ -137,7 +141,7 @@ trvkrav:Graphical rdf:type owl:DatatypeProperty ;
                   rdfs:label "Grafisk"@sv .
 
 
-###  https://www.trafikverket.se/ontologies/trvkrav#Identifier
+###  https://www.trafikverket.se/ontologies/trvkrav/Identifier
 trvkrav:Identifier rdf:type owl:DatatypeProperty ;
                    rdfs:subPropertyOf trvkrav:RequirementsProperties ;
                    rdfs:domain trvkrav:Requirements ;
@@ -145,7 +149,7 @@ trvkrav:Identifier rdf:type owl:DatatypeProperty ;
                    skos:definition "En identifierare är ett namn som identifierar (det vill säga märker identiteten för) antingen ett unikt objekt eller en unik klass av objekt."@sv .
 
 
-###  https://www.trafikverket.se/ontologies/trvkrav#MotiveText
+###  https://www.trafikverket.se/ontologies/trvkrav/MotiveText
 trvkrav:MotiveText rdf:type owl:DatatypeProperty ;
                    rdfs:subPropertyOf trvkrav:Textual ;
                    rdfs:domain trvkrav:Requirements ;
@@ -153,34 +157,34 @@ trvkrav:MotiveText rdf:type owl:DatatypeProperty ;
                    rdfs:label "Motivtext"@sv .
 
 
-###  https://www.trafikverket.se/ontologies/trvkrav#RequirementNotation
+###  https://www.trafikverket.se/ontologies/trvkrav/RequirementNotation
 trvkrav:RequirementNotation rdf:type owl:DatatypeProperty ;
                             rdfs:subPropertyOf trvkrav:RequirementsProperties ;
                             rdfs:domain trvkrav:Requirements ;
                             rdfs:label "Kravnotation"@sv .
 
 
-###  https://www.trafikverket.se/ontologies/trvkrav#RequirementText
+###  https://www.trafikverket.se/ontologies/trvkrav/RequirementText
 trvkrav:RequirementText rdf:type owl:DatatypeProperty ;
                         rdfs:subPropertyOf trvkrav:Textual ;
                         rdfs:domain trvkrav:Requirements ;
                         rdfs:label "Kravtext"@sv .
 
 
-###  https://www.trafikverket.se/ontologies/trvkrav#RequirementsProperties
+###  https://www.trafikverket.se/ontologies/trvkrav/RequirementsProperties
 trvkrav:RequirementsProperties rdf:type owl:DatatypeProperty ;
                                rdfs:domain trvkrav:Requirements ;
                                rdfs:label "Krav egenskaper"@sv .
 
 
-###  https://www.trafikverket.se/ontologies/trvkrav#Textual
+###  https://www.trafikverket.se/ontologies/trvkrav/Textual
 trvkrav:Textual rdf:type owl:DatatypeProperty ;
                 rdfs:subPropertyOf trvkrav:RequirementNotation ;
                 rdfs:domain trvkrav:Requirements ;
                 rdfs:label "Textuell"@sv .
 
 
-###  https://www.trafikverket.se/ontologies/trvkrav#Title
+###  https://www.trafikverket.se/ontologies/trvkrav/Title
 trvkrav:Title rdf:type owl:DatatypeProperty ;
               rdfs:subPropertyOf trvkrav:RequirementsProperties ;
               rdfs:domain trvkrav:Requirements ;
@@ -191,7 +195,11 @@ trvkrav:Title rdf:type owl:DatatypeProperty ;
 #    Classes
 #################################################################
 
-###  https://www.trafikverket.se/ontologies/trvkrav#Asset
+###  https://www.trafikverket.se/ontologies/classification_81346_2/KO
+trvclass:KO owl:equivalentClass trvkrav:Component .
+
+
+###  https://www.trafikverket.se/ontologies/trvkrav/Asset
 trvkrav:Asset rdf:type owl:Class ;
               dce:creator "Karrar Ibrahim"^^xsd:string ;
               dce:date "2023-03-08T09:56:47Z"^^xsd:dateTime ;
@@ -199,7 +207,7 @@ trvkrav:Asset rdf:type owl:Class ;
                          "Tillgång"@sv .
 
 
-###  https://www.trafikverket.se/ontologies/trvkrav#Component
+###  https://www.trafikverket.se/ontologies/trvkrav/Component
 trvkrav:Component rdf:type owl:Class ;
                   rdfs:subClassOf trvkrav:Asset ;
                   dce:creator "Karrar Ibrahim"^^xsd:string ;
@@ -208,7 +216,7 @@ trvkrav:Component rdf:type owl:Class ;
                   trvkrav:isCategory "true"^^xsd:boolean .
 
 
-###  https://www.trafikverket.se/ontologies/trvkrav#ConstructionRequirement
+###  https://www.trafikverket.se/ontologies/trvkrav/ConstructionRequirement
 trvkrav:ConstructionRequirement rdf:type owl:Class ;
                                 rdfs:subClassOf trvkrav:TechnicalRequirement ;
                                 dce:creator "Karrar Ibrahim"^^xsd:string ;
@@ -216,7 +224,7 @@ trvkrav:ConstructionRequirement rdf:type owl:Class ;
                                 rdfs:label "Construction requirement"@en .
 
 
-###  https://www.trafikverket.se/ontologies/trvkrav#DesignRequirement
+###  https://www.trafikverket.se/ontologies/trvkrav/DesignRequirement
 trvkrav:DesignRequirement rdf:type owl:Class ;
                           rdfs:subClassOf trvkrav:TechnicalRequirement ;
                           dce:creator "Karrar Ibrahim"^^xsd:string ;
@@ -224,7 +232,7 @@ trvkrav:DesignRequirement rdf:type owl:Class ;
                           rdfs:label "Design requirement"@en .
 
 
-###  https://www.trafikverket.se/ontologies/trvkrav#FunctionalRequirement
+###  https://www.trafikverket.se/ontologies/trvkrav/FunctionalRequirement
 trvkrav:FunctionalRequirement rdf:type owl:Class ;
                               rdfs:subClassOf trvkrav:Requirements ;
                               dce:creator "Karrar Ibrahim"^^xsd:string ;
@@ -232,7 +240,7 @@ trvkrav:FunctionalRequirement rdf:type owl:Class ;
                               rdfs:label "Functional requirement"@en .
 
 
-###  https://www.trafikverket.se/ontologies/trvkrav#FunctionalSystem
+###  https://www.trafikverket.se/ontologies/trvkrav/FunctionalSystem
 trvkrav:FunctionalSystem rdf:type owl:Class ;
                          rdfs:subClassOf trvkrav:Asset ;
                          dce:creator "Karrar Ibrahim"^^xsd:string ;
@@ -241,7 +249,7 @@ trvkrav:FunctionalSystem rdf:type owl:Class ;
                          trvkrav:isCategory "true"^^xsd:boolean .
 
 
-###  https://www.trafikverket.se/ontologies/trvkrav#InformationRequirement
+###  https://www.trafikverket.se/ontologies/trvkrav/InformationRequirement
 trvkrav:InformationRequirement rdf:type owl:Class ;
                                rdfs:subClassOf trvkrav:Requirements ;
                                dce:creator "Karrar Ibrahim"^^xsd:string ;
@@ -249,7 +257,7 @@ trvkrav:InformationRequirement rdf:type owl:Class ;
                                rdfs:label "Information requirement"@en .
 
 
-###  https://www.trafikverket.se/ontologies/trvkrav#Requirements
+###  https://www.trafikverket.se/ontologies/trvkrav/Requirements
 trvkrav:Requirements rdf:type owl:Class ;
                      dce:creator "Karrar Ibrahim"^^xsd:string ;
                      dce:date "2023-03-08T08:42:22Z"^^xsd:dateTime ;
@@ -258,7 +266,7 @@ trvkrav:Requirements rdf:type owl:Class ;
                      skos:definition "ett uttryck som förmedlar ett behov med dess begränsningar och villkor."@sv .
 
 
-###  https://www.trafikverket.se/ontologies/trvkrav#SpatialElement
+###  https://www.trafikverket.se/ontologies/trvkrav/SpatialElement
 trvkrav:SpatialElement rdf:type owl:Class ;
                        rdfs:subClassOf trvkrav:Asset ;
                        dce:creator "Karrar Ibrahim"^^xsd:string ;
@@ -267,7 +275,7 @@ trvkrav:SpatialElement rdf:type owl:Class ;
                        trvkrav:isCategory "true"^^xsd:boolean .
 
 
-###  https://www.trafikverket.se/ontologies/trvkrav#StructuralSystem
+###  https://www.trafikverket.se/ontologies/trvkrav/StructuralSystem
 trvkrav:StructuralSystem rdf:type owl:Class ;
                          rdfs:subClassOf trvkrav:Asset ;
                          dce:creator "Karrar Ibrahim"^^xsd:string ;
@@ -276,7 +284,7 @@ trvkrav:StructuralSystem rdf:type owl:Class ;
                          trvkrav:isCategory "true"^^xsd:boolean .
 
 
-###  https://www.trafikverket.se/ontologies/trvkrav#TechnicalRequirement
+###  https://www.trafikverket.se/ontologies/trvkrav/TechnicalRequirement
 trvkrav:TechnicalRequirement rdf:type owl:Class ;
                              rdfs:subClassOf trvkrav:Requirements ;
                              dce:creator "Karrar Ibrahim"^^xsd:string ;
@@ -288,14 +296,14 @@ trvkrav:TechnicalRequirement rdf:type owl:Class ;
 #    Individuals
 #################################################################
 
-###  https://www.trafikverket.se/ontologies/trvkrav#K37324
+###  https://www.trafikverket.se/ontologies/trvkrav/K37324
 trvkrav:K37324 rdf:type owl:NamedIndividual ,
                         trvkrav:ConstructionRequirement ;
                trvkrav:Identifier "K37324" ;
                trvkrav:RequirementText "Rostskyddsbehandlad klämfjäder ska användas på impregnerad betongslipe."@sv .
 
 
-###  https://www.trafikverket.se/ontologies/trvkrav#K37328
+###  https://www.trafikverket.se/ontologies/trvkrav/K37328
 trvkrav:K37328 rdf:type owl:NamedIndividual ,
                         trvkrav:ConstructionRequirement ;
                trvkrav:Identifier "K37328" ;
@@ -304,7 +312,7 @@ trvkrav:K37328 rdf:type owl:NamedIndividual ,
 2. oimpregnerad ek ska tillämpas i miljökänsligt område"""@sv .
 
 
-###  https://www.trafikverket.se/ontologies/trvkrav#K37358
+###  https://www.trafikverket.se/ontologies/trvkrav/K37358
 trvkrav:K37358 rdf:type owl:NamedIndividual ,
                         trvkrav:ConstructionRequirement ;
                trvkrav:Graphical "TRVINFRA00018TabellK51.png" ;
@@ -312,7 +320,7 @@ trvkrav:K37358 rdf:type owl:NamedIndividual ,
                trvkrav:RequirementText "I tabell K5.1. framgår de rälval som ska tillämpas vid nybyggnad eller spårbyte"@sv .
 
 
-###  https://www.trafikverket.se/ontologies/trvkrav#K37366
+###  https://www.trafikverket.se/ontologies/trvkrav/K37366
 trvkrav:K37366 rdf:type owl:NamedIndividual ,
                         trvkrav:ConstructionRequirement ;
                trvkrav:Graphical "TRVINFRA00018TabellK52.png" ;
@@ -320,28 +328,28 @@ trvkrav:K37366 rdf:type owl:NamedIndividual ,
                trvkrav:RequirementText "För axellast < 22,5 ton ska rälprofil vid nybyggnad eller upprustning vara densamma som i normalhuvudspåret alternativt den rälprofil som är närmast lägre."@sv .
 
 
-###  https://www.trafikverket.se/ontologies/trvkrav#K37367
+###  https://www.trafikverket.se/ontologies/trvkrav/K37367
 trvkrav:K37367 rdf:type owl:NamedIndividual ,
                         trvkrav:ConstructionRequirement ;
                trvkrav:Identifier "K37367" ;
                trvkrav:RequirementText "För axellast ≥ 22,5 ton ska rälprofil vid nybyggnad eller upprustning överensstämma med den rälprofil som gäller för normalhuvudspåret."@sv .
 
 
-###  https://www.trafikverket.se/ontologies/trvkrav#K37371
+###  https://www.trafikverket.se/ontologies/trvkrav/K37371
 trvkrav:K37371 rdf:type owl:NamedIndividual ,
                         trvkrav:ConstructionRequirement ;
                trvkrav:Identifier "K37371" ;
                trvkrav:RequirementText "Av tabell K5.2. framgår de rälval som ska tillämpas vid nybyggnad eller upprustning."@sv .
 
 
-###  https://www.trafikverket.se/ontologies/trvkrav#K37373
+###  https://www.trafikverket.se/ontologies/trvkrav/K37373
 trvkrav:K37373 rdf:type owl:NamedIndividual ,
                         trvkrav:ConstructionRequirement ;
                trvkrav:Identifier "K37373" ;
                trvkrav:RequirementText "Gaturäl får inte väljas när STH är högre än 60 km/h eller när STAX är högre än 25 ton"@sv .
 
 
-###  https://www.trafikverket.se/ontologies/trvkrav#K37375
+###  https://www.trafikverket.se/ontologies/trvkrav/K37375
 trvkrav:K37375 rdf:type owl:NamedIndividual ,
                         trvkrav:ConstructionRequirement ;
                trvkrav:Identifier "K37375" ;
@@ -350,14 +358,14 @@ trvkrav:K37375 rdf:type owl:NamedIndividual ,
 2. 18 mm vid STAX ≤ 25 ton."""@sv .
 
 
-###  https://www.trafikverket.se/ontologies/trvkrav#K37377
+###  https://www.trafikverket.se/ontologies/trvkrav/K37377
 trvkrav:K37377 rdf:type owl:NamedIndividual ,
                         trvkrav:ConstructionRequirement ;
                trvkrav:Identifier "K37377" ;
                trvkrav:RequirementText "Isolerskarvar och skarvjärn som ligger i kurvor ska hållas under uppsikt när sidoslitaget passerat rälhuvudets nedre kant."@sv .
 
 
-###  https://www.trafikverket.se/ontologies/trvkrav#K37378
+###  https://www.trafikverket.se/ontologies/trvkrav/K37378
 trvkrav:K37378 rdf:type owl:NamedIndividual ,
                         trvkrav:ConstructionRequirement ;
                trvkrav:Graphical "TRVINFRA00018TabellK53.png" ;
@@ -365,84 +373,84 @@ trvkrav:K37378 rdf:type owl:NamedIndividual ,
                trvkrav:RequirementText "Rälbyte ska ske innan jämförbart slitage (H) nått de största tillåtna värdena i tabell K5.3."@sv .
 
 
-###  https://www.trafikverket.se/ontologies/trvkrav#K37380
+###  https://www.trafikverket.se/ontologies/trvkrav/K37380
 trvkrav:K37380 rdf:type owl:NamedIndividual ,
                         trvkrav:ConstructionRequirement ;
                trvkrav:Identifier "K37380" ;
                trvkrav:RequirementText "För räler med rostangrepp ska följande uppfyllas: 1. Rällivet har inte reducerats med mer än 30 procent av ursprunglig godstjocklek. 2. Rälfoten har inte reducerats med mer än 20 procent av ursprunglig tjocklek mätt vid dess ytterkant."@sv .
 
 
-###  https://www.trafikverket.se/ontologies/trvkrav#K37382
+###  https://www.trafikverket.se/ontologies/trvkrav/K37382
 trvkrav:K37382 rdf:type owl:NamedIndividual ,
                         trvkrav:ConstructionRequirement ;
                trvkrav:Identifier "K37382" ;
                trvkrav:RequirementText "Räler med ökad huvudbredd ska bytas vid spårviddsfel under Min KRIT-gräns och graderna inte kan slipas eller hyvlas bort i spåret. För KRIT-gräns se avsnitt 12.2.1.1 Punktfel, i dokument TRVINFRA-00013 Banöverbyggnad Spårläge."@sv .
 
 
-###  https://www.trafikverket.se/ontologies/trvkrav#K37383
+###  https://www.trafikverket.se/ontologies/trvkrav/K37383
 trvkrav:K37383 rdf:type owl:NamedIndividual ,
                         trvkrav:ConstructionRequirement ;
                trvkrav:Identifier "K37383" ;
                trvkrav:RequirementText "Räler med vågbildning (korta vågor) ska bearbetas genom maskinell slipning eller fräsning enligt kapitel 7Rälbearbetning, i dokument TRVINFRA-00016 Banöverbyggnad Svetsning, bearbetning och smörjning."@sv .
 
 
-###  https://www.trafikverket.se/ontologies/trvkrav#K37424
+###  https://www.trafikverket.se/ontologies/trvkrav/K37424
 trvkrav:K37424 rdf:type owl:NamedIndividual ,
                         trvkrav:ConstructionRequirement ;
                trvkrav:Identifier "K37424" ;
                trvkrav:RequirementText "Vid inläggning av passräl i spår ska avståndet mellan två på varandra följande svetsskarvar (oavsett typ av skarv) vara minst 5 m."@sv .
 
 
-###  https://www.trafikverket.se/ontologies/trvkrav#K37425
+###  https://www.trafikverket.se/ontologies/trvkrav/K37425
 trvkrav:K37425 rdf:type owl:NamedIndividual ,
                         trvkrav:ConstructionRequirement ;
                trvkrav:Identifier "K37425" ;
                trvkrav:RequirementText "Vid inläggning av passräl i eller i direkt anslutning till spårväxlar (dvs. FSK respektive BKS) gäller att avståndet mellan två svetsskarvar ska vara minst 1,5 m"@sv .
 
 
-###  https://www.trafikverket.se/ontologies/trvkrav#K37427
+###  https://www.trafikverket.se/ontologies/trvkrav/K37427
 trvkrav:K37427 rdf:type owl:NamedIndividual ,
                         trvkrav:ConstructionRequirement ;
                trvkrav:Identifier "K37427" ;
                trvkrav:RequirementText "Vid inläggning i spår ska sidoramprälen kapas där dess huvudbredd svarar mot den huvudbredd som anslutande räl har."@sv .
 
 
-###  https://www.trafikverket.se/ontologies/trvkrav#K37428
+###  https://www.trafikverket.se/ontologies/trvkrav/K37428
 trvkrav:K37428 rdf:type owl:NamedIndividual ,
                         trvkrav:ConstructionRequirement ;
                trvkrav:Identifier "K37428" ;
                trvkrav:RequirementText "Sidoramprälens längd får inte understiga 5 m efter kapning."@sv .
 
 
-###  https://www.trafikverket.se/ontologies/trvkrav#K37430
+###  https://www.trafikverket.se/ontologies/trvkrav/K37430
 trvkrav:K37430 rdf:type owl:NamedIndividual ,
                         trvkrav:ConstructionRequirement ;
                trvkrav:Identifier "K37430" ;
                trvkrav:RequirementText "I huvudspår ska brännsvetsade övergångsräler användas i övergång mellan räler med olika profil med undantag för övergång mot växeltyp DKV med rälprofil 54E3"@sv .
 
 
-###  https://www.trafikverket.se/ontologies/trvkrav#K37432
+###  https://www.trafikverket.se/ontologies/trvkrav/K37432
 trvkrav:K37432 rdf:type owl:NamedIndividual ,
                         trvkrav:ConstructionRequirement ;
                trvkrav:Identifier "K37432" ;
                trvkrav:RequirementText "Rällängd för passräler får inte understiga 5 m."@sv .
 
 
-###  https://www.trafikverket.se/ontologies/trvkrav#K37435
+###  https://www.trafikverket.se/ontologies/trvkrav/K37435
 trvkrav:K37435 rdf:type owl:NamedIndividual ,
                         trvkrav:ConstructionRequirement ;
                trvkrav:Identifier "K37435" ;
                trvkrav:RequirementText "Färgmärkning får inte utföras på rälens ändytor."@sv .
 
 
-###  https://www.trafikverket.se/ontologies/trvkrav#K37437
+###  https://www.trafikverket.se/ontologies/trvkrav/K37437
 trvkrav:K37437 rdf:type owl:NamedIndividual ,
                         trvkrav:ConstructionRequirement ;
                trvkrav:Identifier "K37437" ;
                trvkrav:RequirementText "Lastning av långräler ska göras på avsedda vagnar, så kallade långrälståg."@sv .
 
 
-###  https://www.trafikverket.se/ontologies/trvkrav#K37438
+###  https://www.trafikverket.se/ontologies/trvkrav/K37438
 trvkrav:K37438 rdf:type owl:NamedIndividual ,
                         trvkrav:ConstructionRequirement ;
                trvkrav:Identifier "K37438" ;
@@ -453,7 +461,7 @@ trvkrav:K37438 rdf:type owl:NamedIndividual ,
 4. intryck och skador på övrig delar av räl med ett djup ≥ 0,5 mm."""@sv .
 
 
-###  https://www.trafikverket.se/ontologies/trvkrav#K37442
+###  https://www.trafikverket.se/ontologies/trvkrav/K37442
 trvkrav:K37442 rdf:type owl:NamedIndividual ,
                         trvkrav:ConstructionRequirement ;
                trvkrav:Identifier "K37442" ;
@@ -463,7 +471,7 @@ trvkrav:K37442 rdf:type owl:NamedIndividual ,
 Undantag gäller vid upprustning av spår med träsliper då träsliper med Heyback kan väljas."""@sv .
 
 
-###  https://www.trafikverket.se/ontologies/trvkrav#K37445
+###  https://www.trafikverket.se/ontologies/trvkrav/K37445
 trvkrav:K37445 rdf:type owl:NamedIndividual ,
                         trvkrav:ConstructionRequirement ;
                trvkrav:Identifier "K37445" ;
@@ -475,15 +483,40 @@ trvkrav:K37445 rdf:type owl:NamedIndividual ,
 5. direktinfästning av träsliper på bro med Pandrol e-clip underläggplatta"""@sv .
 
 
-###  https://www.trafikverket.se/ontologies/trvkrav#K37450
+###  https://www.trafikverket.se/ontologies/trvkrav/K37450
 trvkrav:K37450 rdf:type owl:NamedIndividual ,
                         trvkrav:ConstructionRequirement ;
                trvkrav:Identifier "K37450" ;
                trvkrav:RequirementText "Impregnerad betongsliper ska användas i plankorsning"@sv .
 
 
-###  https://www.trafikverket.se/ontologies/trvkrav#683664
-<https://www.trafikverket.se/ontologies/trvkrav#683664> rdf:type owl:NamedIndividual ,
+###  https://www.trafikverket.se/ontologies/trvkrav/WRAAA
+trvkrav:WRAAA rdf:type owl:NamedIndividual ,
+                       trvclass:KO-WRA ;
+                       trvkrav:hasRequirement trvkrav:K37358 ,
+                                     trvkrav:K37366 ,
+                                     trvkrav:K37367 ,
+                                     trvkrav:K37371 ,
+                                     trvkrav:K37373 ,
+                                     trvkrav:K37375 ,
+                                     trvkrav:K37377 ,
+                                     trvkrav:K37378 ,
+                                     trvkrav:K37380 ,
+                                     trvkrav:K37382 ,
+                                     trvkrav:K37383 ,
+                                     trvkrav:K37424 ,
+                                     trvkrav:K37425 ,
+                                     trvkrav:K37427 ,
+                                     trvkrav:K37428 ,
+                                     trvkrav:K37430 ,
+                                     trvkrav:K37432 ,
+                                     trvkrav:K37435 ,
+                                     trvkrav:K37437 ,
+                                     trvkrav:K37438 .
+
+
+###  https://www.trafikverket.se/ontologies/trvkrav/683664
+<https://www.trafikverket.se/ontologies/trvkrav/683664> rdf:type owl:NamedIndividual ,
                                                                  trvkrav:ConstructionRequirement ;
                                                         trvkrav:Identifier 682919 ;
                                                         trvkrav:MotiveText """Eftersom det för våra nuvarande banor finns sträckor där problem med nedkrossning förekommer har kravet för NS höjts i syfte att säkerställa en begränsad risk för nedkrossning.
