@@ -1,5 +1,6 @@
-@prefix : <https://www.trafikverket.se/ontologies/classification_81346_2/> .
+@base <https://www.trafikverket.se/ontologies/classification_81346_2/> .
 # The Link <https://www.trafikverket.se/ontologies/classification_81346_2/> is not operational yet 
+
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -10,18 +11,17 @@
 @prefix vann: <http://purl.org/vocab/vann/> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix trvclass: <https://www.trafikverket.se/ontologies/classification_81346_2/> .
-@base <https://www.trafikverket.se/ontologies/classification_81346_2/> .
 
-<https://www.trafikverket.se/ontologies/classification_81346_2/> rdf:type owl:Ontology ;
-                                                                  owl:versionIRI <https://www.trafikverket.se/ontologies/classification_81346_2/1.0.0> ;
-                                                                  dc:creator <http://www.trafikverket.se/> ;
-                                                                  dc:title "TrvClass" ;
-                                                                  dcterms:abstract "Ontologi som representerar innehållet i 81346-2 från Trafikverket."@sv ;
-                                                                  dcterms:created "2023-02-20"^^xsd:date ;
-                                                                  vann:preferredNamespacePrefix "trvclass" ;
-                                                                  vann:preferredNamespaceUri "https://www.trafikverket.se/ontologies/classification_81346_2/1.0.0" ;
-                                                                  rdfs:isDefinedBy "Trafikverket" ;
-                                                                  owl:versionInfo "1.0.0" .
+
+trvclass: dc:creator <http://www.Trafikverket.se/>;
+         dc:title "TrvClass";
+         dcterms:abstract "Ontologi som representerar innehållet i 81346-2 från Trafikverket."@sv;
+         dcterms:created "2023-02-20"^^xsd:date;
+         vann:preferredNamespacePrefix "trvclass";
+         vann:preferredNamespaceUri "https://www.trafikverket.se/ontologies/classification_81346_2/";
+         a owl:Ontology;
+         rdfs:isDefinedBy trvclass:;
+         owl:versionInfo "0.1.0".
 
 #################################################################
 #    Annotation properties
