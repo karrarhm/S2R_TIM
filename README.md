@@ -1,4 +1,4 @@
-# Shift2Rail / <img src="https://www.cooperationtool.eu/projects/images/projects/rmmwt4lcynx.jpg"/>
+# Shift2Rail / <img src="https://www.cooperationtool.eu/projects/images/projects/rmmwt4lcynx.jpg" style="width: 100px"/>
 
 # Track Information Model (TIM)
 
