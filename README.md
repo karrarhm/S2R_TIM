@@ -1,6 +1,6 @@
 # S2R_TIM
 Track Information Model, a Shift2Rail project.
 
-<img src="Documentation/graphics/bSDD_logo.png"
-     alt="bSDD logo"
+<img src="Virtual Environment/TIM_VE_2.png"
+     alt="TIM"
      style="width: 200px" />
