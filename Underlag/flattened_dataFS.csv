@@ -1,0 +1,308 @@
+globalIdentifier,definition,note,identifier,title,parentId,statusId,id,example,parent
+695638d4-192f-4a52-952a-72c3d4ffdd52,funktionellt system som skapar utrymme,"Det finns tre grupper av funktionella system (siffrorna 1, 2 och 3 betyder dock ingenting, utan är endast en ordningsföljd): 
+
+1. ""utrymmesskapande system"" som ger byggnadsverket sin form, till exempel väggar, bjälklag och överbyggnader.
+2. ""installationssystem"" som exempelvis försörjer med media, som värmer och kyler, som trans­porterar och som styr och övervakar.
+3. ""utrustande system"" som förser byggnadsverket och dess utrymmen med inredning och utrustning.",1,Utrymmesskapande system,0,0,575545,,
+96572061-e1e5-4cf5-96f0-e568e7472944,utrymmesskapande system som formar och avskiljer utrymmen vertikalt eller som utgör icke kontinuerligt vertikalt stöd,"Definition i ISO/IEC 81346-12:2018 kompletterad med ""eller som utgör icke kontinuerligt stöd"".
+
+Väggsystem realiseras av det konstruktiva systemet AD Väggkonstruktion eller någon av dess typer. Dessa omfattar helheten av konstruktionen. Det konstruktiva systemet BD Väggstomme avser bärande och stabiliserande byggdelar i väggkonstruktionen. BD är alltså en del av AD, som tillsammans åstadkommer väggsystemets konstruktion. Strukturen uttrycks som B.AD.BD.",B,Väggsystem,575545,0,575547,"bergrumsvägg, dammvägg, spontvägg, stödmur, tunnelvägg, ytterväggssystem, innerväggssystem, terrängmur, pelarsystem",575545.0
+e9b9877a-2f80-4cf0-b1be-987cb0b14041,väggsystem över mark mot utsidan av byggnadsverk,,B10,Ytterväggssystem,575547,0,311273,"-
+",575547.0
+ddfcf685-b5aa-4a8e-8a16-23227fe821a1,väggsystem mellan utrymmen i byggnadsverk,Typ B20 omfattar alla typer av innerväggar. Typ B23 Innervägg används för väggar mot andra utrymmen än schakt.,B20,Innerväggssystem,575547,0,311274,,575547.0
+a840784d-4ab7-4985-b28c-bebf55743038,innerväggssystem mot installationsschakt,,B21,Schaktvägg,311274,0,312461,,311274.0
+80c5c205-09c5-449c-8e01-eed73a9567eb,innerväggssystem mot hisschakt,,B22,Hisschaktsvägg,311274,0,312462,,311274.0
+7d0aabf3-140b-46b6-acb8-b2cb8848263b,innerväggssystem mot rum,,B23,Innervägg,311274,0,312369,,311274.0
+b773e7cb-2908-4f55-ac37-161fbfe335b4,väggsystem mot mark,,B30,Vägg mot mark,575547,0,311293,"Källarvägg, stödmur, landfäste, skärning, spont, bergvägg",575547.0
+cd96d6a1-6e32-413a-95d5-0a252a79207a,vägg mot mark för invändigt utrymme,,B31,Källarvägg,311293,0,312452,"kulvertvägg
+",311293.0
+c826a731-2a39-4cb4-9f41-43cbf85c4752,vägg mot mark för utvändigt utrymme,,B32,Stödmur,311293,0,312453,"landfäste, skärning, spont, bergvägg
+",311293.0
+639e1280-97f9-4539-ba79-33a176e612c1,väggsystem fristående på mark,,B40,Terrängmur,575547,0,311275,"mur
+",575547.0
+3d8d5a85-539a-4445-a8b6-130eb711336d,väggsystem mot vatten,,B50,Vattenvägg,575547,0,311276,,575547.0
+64eb3958-3d68-4a1d-853b-d841e458f9df,vattenvägg mellan land och vatten,,B51,Kaj- och pirvägg,311276,0,312459,"kaj, kajvägg",311276.0
+707ae90d-5367-4593-9024-34e952af6d1a,vattenvägg i vattendrag,,B52,Dammvägg,311276,0,312460,"
+",311276.0
+9170a0aa-ac90-4b85-81e6-ab82d2557f1d,väggsystem under mark,,B60,Tunnelväggssystem,575547,0,311277,bergrumsvägg,575547.0
+7680046a-dbf2-4ff5-9f4c-33b532c717a5,väggsystem mellan bjälklag eller mellan bjälklag och grund som utgör icke kontinuerligt vertikalt stöd,"Pelarsystemet innehåller endast det konstruktiva systemet för själva bärverket. Systemet kan användas för att ställa krav på till exempel maximalt avstånd mellan pelare och balkar, eller för att ställa krav på till exempel ett maskinfundament som utgörs av ett pelarsystem. I CoClass ligger pelarsystem som en typ av väggsystem eftersom det primärt är ett vertikalt bärverk, även om det kan innehålla balkar.",B70,Pelarsystem,575547,0,311278,,575547.0
+e953c34d-93cb-4253-902f-a47e271db167,väggsystem för bro,,B80,Brounderbyggnad,575547,0,311339,"bropelare, stöd, mellanstöd, frontmur, vingmur, landfäste",575547.0
+88df2f7f-ee15-4c88-8feb-6cfda5facb46,utrymmesskapande system som formar och avskiljer utrymmen horisontellt,"Bjälklagssystem omfattar hela bjälklagsfunktionen från NCD Innertaksbeklädnad till NCC Golvbeläggning. Den innehåller alltid det konstruktiva systemet AC Bjälklagskonstruktion.
+
+Stommen kan klassificeras separat som BC Bjälklagsstomme, som kan benämnas bärlag eller stombjälklag. BC är alltså en del av AC, som tillsammans uttrycker bjälklagets konstruktion. Strukturen uttrycks som B.AC.BC.
+
+I byggnader finns också ofta en AQ Golvkonstruktion och en AP Undertakskonstruktion. 
+
+Eventuella ytskikt på takbeklädnad och på golvbeläggning ingår i S.RE31 Ytkompletteringar på innertak respektive S.RE20 Anordningar > Ytkompletteringar golv.
+
+Platta på mark klassificeras som A20.AB10.ULK30 Grundläggning > Plattgrundläggning > Bottenplatta.",C,Bjälklagssystem,575545,0,575548,"Altan, bjälklag, brobana, broöverbyggnad, brygga, lastkaj, loftgång, svalgång, hanbjälklag, källarbjälklag",575545.0
+fc4df458-384f-41a0-b521-6024c728ebf1,bjälklagssystem under det lägsta våningsplanet i en byggnad,Platta på mark klassificeras som A20.AB10.ULK30 Grundläggning > Plattgrundläggning > Bottenplatta.,C10,Bottenbjälklag,575548,0,311279,"
+",575548.0
+65d41590-fe5b-40ec-b59c-4e855ad89490,bjälklagssystem mellan våningsplan i en byggnad,,C20,Mellanbjälklag,575548,0,311280,"våningsbjälklag, källarbjälklag
+",575548.0
+e1caf9cb-e363-431c-aa5c-bcff91aad066,bjälklagssystem över det högsta våningsplanet i en byggnad,,C30,Vindsbjälklag,575548,0,311281,hanbjälklag,575548.0
+a793bb73-3c99-4718-b0a5-32751ac90f9b,bjälklagssystem som skjuter ut från byggnad,,C40,Utskjutande bjälklag,575548,0,311282,"Balkongbjälklag, dockningsstation, lastkaj, loftgångsbjälklag, svalgångsbjälklag
+",575548.0
+42a6694a-6dee-4a26-9b98-4c8982ec7860,utskjutande bjälklagssystem för stationär aktivitet,,C41,Balkongbjälklag,311282,0,312456,,311282.0
+5bd16e41-32bc-40a4-9549-5b6d1333ef88,utskjutande bjälklagssystem för åtkomst till entré,,C42,Loftgångsbjälklag,311282,0,312457,"Svalgångsbjälklag
+",311282.0
+f31bc602-2a4a-4be3-816f-c23e20c694c8,utskjutande bjälklagssystem för angöring av fordon,,C43,Lastkaj,311282,0,312458,,311282.0
+1cf4746e-7278-4973-b0df-2104f82d3ccf,bjälklagssystem över ett hinder,,C50,Broöverbyggnad,575548,0,311294,"brobana
+",575548.0
+744da112-5e15-4300-9dd9-be3debc63415,broöverbyggnad med fast brobana,,C51,Fast broöverbyggnad,311294,0,312450,,311294.0
+579297c5-a24f-4b5b-8c3c-a98f1ab62e6e,broöverbyggnad med rörlig brobana,,C52,Öppningsbar broöverbyggnad,311294,0,312451,,311294.0
+f22d9e24-be95-4005-b886-aa82484aad22,"bjälklagssystem över mark, vanligen utskjutande från en byggnad",,C60,Altanbjälklag,575548,0,311283,Trädäck,575548.0
+f3cbb093-24ae-4867-9ddd-2e4070c9db2e,bjälklagssystem stående över vatten,,C70,Brygga,575548,0,311284,,575548.0
+910208d6-2b76-4a08-af38-b5facfa5f956,utrymmesskapande system som avslutar en byggnad uppåt,"Yttertakssystemet realiseras av det konstruktiva systemet AE Yttertakskonstruktion eller någon av dess typer. Dessa omfattar helheten av konstruktionen. Det konstruktiva systemet BE Yttertaksstomme avser bärande och stabiliserande byggdelar i yttertakskonstruktionen. BE är alltså en del av AE, som tillsammans åstadkommer yttertakssystemets konstruktion. Strukturen uttrycks som D10.AE.BE.",D,Yttertakssystem,575545,0,575549,"ytterbjälklag, yttertak, tunneltak",575545.0
+ecf34227-93e6-4299-8b0e-fe36bcffc965,yttertakssystem ej avsett för verksamhet,"Yttertak realiseras av det konstruktiva systemet AE Yttertakskonstruktion eller någon av dess typer. Dessa omfattar helheten av konstruktionen. Det konstruktiva systemet BE Yttertaksstomme avser bärande och stabiliserande byggdelar i yttertakskonstruktionen. BE är alltså en del av AE, som tillsammans åstadkommer yttertakets konstruktion. Strukturen uttrycks som D10.AE.BE.",D10,Yttertak,575549,0,311285,"
+",575549.0
+17c8bf95-c438-4263-a1fb-1aad1f195b34,yttertakssystem avsett för verksamhet,"Ytterbjälklag realiseras av det konstruktiva systemet AE Yttertakskonstruktion eller någon av dess typer. Dessa omfattar helheten av konstruktionen. Det konstruktiva systemet BE Yttertaksstomme avser bärande och stabiliserande byggdelar i yttertakskonstruktionen. BE är alltså en del av AE, som tillsammans åstadkommer ytterbjälklagets konstruktion. Strukturen uttrycks som D20.AE.BE.
+
+Ytterbjälklaget (terrasstaket) avslutas uppåt vid överkant tätskikt alternativt överkant isolering. Eventuella anläggningar på ytterbjälklaget med dräneringslager, jord, asfaltytor, marksten och dylikt hör till byggnadsverket DBA Utemiljö. Ljuskupoler med tillhörande sarger tillhör dock ytterbjälklaget.",D20,Ytterbjälklag,575549,0,311286,"gårdsbjälklag, terrasstak
+",575549.0
+ba9fc15d-4599-425f-b279-e7a4c04c23c1,yttertakssystem i tunnel,,D30,Tunneltak,575549,0,311287,,575549.0
+031c9779-308f-4c7d-83fe-69b84c16cbb5,"utrymmesskapande system på mark, eller som avslutar ett byggnadsverk nedåt",Definition i IEC/ISO 81346-12:2018: space system which terminates a construction entity downwards.,A,Mark- och grundsystem,575545,0,575546,"terrass, grundläggning, väganläggning, sidoområde för trafik, plan på mark, vegetationsyta, vattenanläggning, spåranläggning",575545.0
+3d0cba5e-c27c-4de0-ba81-a095e8065df0,utrymmesskapande marksystem,"Tidigare definition: marksystem som utgör underlag för andra utrymmesskapande system.
+
+A10 bör användas för samtliga utrymmen på mark, till exempel väg, järnväg, hårdgjorda ytor, planteringsytor och gräsytor.
+
+I sådana ingår vanligen två konstruktiva system: CA Terrasskonstruktion tillsammans med en överbyggnad.
+
+Typerna A30–A80 bör inte användas i nya projekt.",A10,Marksystem,575546,0,311265,"marköverbyggnad, överbyggnad, vägkropp, banvall",575546.0
+3767eab8-4bf7-429f-8972-e8bc75759f6d,grundsystem som avslutar ett byggnadsverk nedåt,"Tidigare definition: mark- och grundsystem som överför last från övriga delar av byggnadsverket till mark.
+
+I typen A20 Grundläggning ingår grundläggning för alla typer av byggnadsverk som kräver mer åtgärder än till exempel fundament för skylt- och belysningsstolpar. Sådana anges som sub-komponenter, till exempel S.BH30.UBD.ULC11 Anordningar > Kanalisation över mark > Stolpe > Stolpfundament.",A20,Grundläggning,575546,0,311266,"grund, platta på mark, grundmurar, bottenplatta",575546.0
+5d738dd3-09be-46d8-a4f3-5c1a8b5c88a0,marksystem för markburen trafik,Bör inte användas i nya projekt till förmån för A10.,A30,Väganläggning,575546,0,311267,,575546.0
+51e72132-6eff-4db4-a0e4-73b2b8262e52,"väganläggning för körbana och eventuella vägrenar, uppställningsfält och cykelfält",Bör inte användas i nya projekt till förmån för A10.,A31,Vägbana,311267,0,312480,"bussgata, bussväg, entréväg, flerfältsväg, gata, gårdsgata, motorväg, tvåfältsväg",311267.0
+f862bd1a-7a66-46ea-ac5c-54e5af4f39e0,"väganläggning utgörande del av vägbana avsedd för primär fordonstrafik, dock inte vägren eller cykelbana",Bör inte användas i nya projekt till förmån för A10.,A32,Körbana,311267,0,312481,"avskild hållplats, cirkulation, rullbana,  taxibana",311267.0
+346c115a-a4ec-484f-9d03-3c2cb1def1cd,väganläggning för gång- och cykeltrafik,Bör inte användas i nya projekt till förmån för A10.,A33,Gång- och/eller cykelbana,311267,0,312482,"gångbana, cykelbana, gång- och cykelväg, gång- och cykelbana, gångväg",311267.0
+a1d048de-da60-42e3-99b0-8df7abbda388,väganläggning utgörande del av körbana som är avsedd för trafik i en riktning,Bör inte användas i nya projekt till förmån för A10.,A34,Körfält,311267,0,312483,cykelfält,311267.0
+9865b495-4354-48f0-a7b7-b072c6ed4eee,"väganläggning utgörande del av vägbana avsedd för sekundär fordonstrafik, dock inte körbana eller cykelbana",Bör inte användas i nya projekt till förmån för A10.,A35,Vägren,311267,0,312484,"mittvägren, sidovägren",311267.0
+852b74f6-1c61-4594-a3c2-4092e168b41e,väganläggning i vägbana för skydd av fotgängare eller för styrning av trafikströmmar i korsning,Bör inte användas i nya projekt till förmån för A10.,A36,Trafikö,311267,0,312485,"refug, rondell",311267.0
+3d06d8a8-ea6c-4645-8d8b-469a978ffeff,väganläggning utgörande del av vägbana avsedd för parkering av fordon eller för busshållplats,Bör inte användas i nya projekt till förmån för A10.,A37,Uppställningsfält,311267,0,312486,,311267.0
+d4e15e39-68a3-4fb2-be2a-6fb8946ff801,"väganläggning utanför vägbana för vändning, tillfälligt stopp och andra trafikrelaterade fordonsrörelser",Bör inte användas i nya projekt till förmån för A10.,A38,Sidoanläggning,311267,0,312487,"busshållplats, bussvändslinga, driftvändplats, fickhållplats, hållplats, katastroföverfart, kontrollplats, parkeringsplats, rastficka, serviceficka, uppställningsplats, vändplats",311267.0
+3a571765-93df-45e4-a7e0-06e7cc7e4fd4,väganläggning som stöder kant på vägbana,Bör inte användas i nya projekt till förmån för A10.,A39,Stödremsa,311267,0,312376,skuldra,311267.0
+09c44950-b4fc-47ea-ae30-c18df4e5ad8e,marksystem för vägområde utanför trafikanläggning,Bör inte användas i nya projekt till förmån för A10.,A40,Sidoområde för trafik,575546,0,311268,,575546.0
+9f69214c-2cdd-44ca-bad6-4a6cff3f6eae,"sidoområde för trafik i form av skiljeremsa mellan körbana och gångbana, cykelbana eller annan körbana",Bör inte användas i nya projekt till förmån för A10.,A41,Sidoremsa,311268,0,312474,,311268.0
+c98a1f15-540b-4f0b-a17f-3bfd76d08397,sidoområde för trafik i form av skiljeremsa mellan vägbanor med motriktad trafik,Bör inte användas i nya projekt till förmån för A10.,A42,Mittremsa,311268,0,312475,,311268.0
+f4bc4132-2f73-426f-a112-9b9e94776c3d,lutande del av sidoområde för trafik,Bör inte användas i nya projekt till förmån för A10.,A43,Slänt,311268,0,312476,,311268.0
+d91609ee-9c78-4635-9c58-83bdef2476ec,sidoområde för trafik mellan stödremsa och dikesbotten,Bör inte användas i nya projekt till förmån för A10.,A44,Innerslänt,311268,0,312477,innerbanksslänt,311268.0
+acb68b49-025f-4452-8ae5-6c7c9b7bbeae,sidoområde för trafik utanför dikesbotten,Bör inte användas i nya projekt till förmån för A10.,A45,Ytterslänt,311268,0,312478,,311268.0
+b17505ed-51f9-4c0d-b4c6-a8e4f1ab6364,sidoområde för trafik utanför bankfot eller släntkrön,Bör inte användas i nya projekt till förmån för A10.,A46,Kantremsa,311268,0,312479,,311268.0
+63157dc0-6761-40d1-bec6-cbace5047b09,marksystem för annan primär verksamhet än trafik,Bör inte användas i nya projekt till förmån för A10.,A50,Plan på mark,575546,0,311269,"gårdsyta, torgyta, vistelseyta, lekyta, idrottsyta, industriyta, terminalområde, uppställningsplatta, parkeringsyta",575546.0
+2e475803-f3ee-4df4-b206-b2f9422d4d84,plan på mark för tung verksamhet,Bör inte användas i nya projekt till förmån för A10.,A51,Industriyta,311269,0,312468,,311269.0
+b857b417-443c-4b2e-af1b-bb7118ca0af9,plan på mark för uppställning av fordon,Bör inte användas i nya projekt till förmån för A10.,A52,Parkeringsyta,311269,0,312469,uppställningsplatta,311269.0
+974f4207-5142-48d5-914a-e2c3a43cc1e0,plan på mark för vistelse och lätt verksamhet,Bör inte användas i nya projekt till förmån för A10.,A53,Torg- och vistelseyta,311269,0,312470,,311269.0
+b4268604-bfc2-42c3-9f78-f44029e037a3,plan på mark för idrott,Bör inte användas i nya projekt till förmån för A10.,A54,Idrottsplan,311269,0,312471,,311269.0
+96405e09-df8e-4f74-9a3a-fd9851d42478,upphöjd plan på mark för av- och påstigning i fordon,Bör inte användas i nya projekt till förmån för A10.,A55,Plattform,311269,0,312472,,311269.0
+e2ad6765-a30a-42b9-b8e7-8a15ea487cbd,plan på mark för lek,Bör inte användas i nya projekt till förmån för A10.,A56,Lekyta,311269,0,312473,,311269.0
+4646ba48-aa4d-4fb7-b8fb-3e910df6dd4e,marksystem för vegetation,Bör inte användas i nya projekt till förmån för A10.,A60,Vegetationsyta,575546,0,311270,"naturyta, parkyta, grönyta
+",575546.0
+3bc463ed-5431-4b7c-a4a9-cfdffaca09e1,vegetationsöverbyggnad för plantering,Bör inte användas i nya projekt till förmån för A10.,A61,Planteringsyta,311270,0,312467,"buskyta
+",311270.0
+65e15ad1-6596-49cd-9e24-40bb482a5d94,vegetationsöverbyggnad för gräs,Bör inte användas i nya projekt till förmån för A10.,A62,Gräsyta,311270,0,312375,,311270.0
+d2b2167a-ee63-4220-82f2-6be3206c07f2,marksystem för hantering av vatten,Bör inte användas i nya projekt till förmån för A10.,A70,Vattenanläggning,575546,0,311271,,575546.0
+6bb63eb7-a7b8-4851-8369-aa867f1f6dd0,vattenanläggning för lagring,Bör inte användas i nya projekt till förmån för A10.,A71,Damm,311271,0,312463,"Fördröjningsanläggning
+",311271.0
+81ca48f2-a95e-4931-9c7f-ecfbc32f4407,vattenanläggning för öppen ledning,Bör inte användas i nya projekt till förmån för A10.,A72,Vattenväg,311271,0,312464,"Kanal
+",311271.0
+a4182491-6263-48f2-87a0-9fda0393e0a6,vattenanläggning för ledning in i mark,Bör inte användas i nya projekt till förmån för A10.,A73,Infiltrationsanläggning,311271,0,312465,,311271.0
+fa2920dc-79af-447d-a17d-eddf367c575b,vattenanläggning för sluten ledning i mark,Bör inte användas i nya projekt till förmån för A10.,A74,Vattentunnel,311271,0,312466,,311271.0
+863c4484-17e8-4ca0-85bf-da2fd7220830,marksystem för spårburen trafik,Bör inte användas i nya projekt till förmån för A10.,A80,Spåranläggning,575546,0,311272,,575546.0
+b89de2aa-8c53-43e0-a9c0-3df7c2dffb82,funktionellt system som tillhandahåller tjänster,"Det finns tre grupper av funktionella system (siffrorna 1, 2 och 3 betyder dock ingenting, utan är endast en ordningsföljd): 
+
+1. ""utrymmesskapande system"" som ger byggnadsverket sin form, till exempel väggar, bjälklag och överbyggnader.
+2. ""installationssystem"" som exempelvis försörjer med media, som värmer och kyler, som trans­porterar och som styr och övervakar.
+3. ""utrustande system"" som förser byggnadsverket och dess utrymmen med inredning och utrustning.",2,Installationssystem,0,0,575550,,
+c3f0e01e-382d-4a95-ae41-3c2c4c9266f5,utrustande system som leder och styr spårbundna fordon,,R,Spårsystem,575550,0,575565,banöverbyggnad,575550.0
+a3b4cf3a-07a1-4578-9195-3e18cccb3f6a,installationssystem som tillhandahåller luftväxling,"Gränsen mellan systemen för luftbehandling, kyla och värme kan dras på olika sätt. Strikt funktionellt hör kylande och värmande objekt till H10 Kylsystem respektive H20 Värmesystem även i de fall de är fysiskt integrerade i objekt som tillhör J Luftbehandlingssystem. Om detta också är praktiskt att göra får avgöras i det enskilda fallet.",J,Luftbehandlingssystem,575550,0,575555,"allmänventilationssystem, specialventilationssystem, teknikutrymmesventilation, tunnelventilationssystem, renrumsventilation, skyddsrumsventilationssystem, platsventilationssystem, nödventilationssystem, brandgaskontrollsystem",575550.0
+05912bde-28c7-42f7-bfd3-8ed79e703e68,"luftbehandlingssystem för att omhänderta luftföroreningar från människor, byggmaterial, inventarier o.d.",,J10,Allmänventilationssystem,575555,0,311312,,575555.0
+c01c0794-aa1b-4835-8052-2a056b269b37,luftbehandlingssystem för visst utrymme,,J20,Specialventilationssystem,575555,0,311313,,575555.0
+ed9c42d6-5ec8-40dc-b132-ff132c9ca1db,specialventilationssystem i teknikutrymme,,J21,Teknikutrymmesventilation,311313,0,312415,"Driftutrymmesventilation
+",311313.0
+9cccc114-2284-4972-bbbe-66690f75926b,specialventilationssystem i tunnel,,J22,Tunnelventilationssystem,311313,0,312416,,311313.0
+2c238fad-9998-46b9-bbca-892c6bdc9b38,specialventilationssystem med högfiltrerad luft,,J23,Renrumsventilation,311313,0,312417,"Behandlingsrumsventilation
+",311313.0
+a8d7b899-dde1-4b26-8378-84cdea1866e2,specialventilationssystem i utrymme enligt lag om skyddsrum,,J24,Skyddsrumsventilationssystem,311313,0,312418,,311313.0
+83ea9e7a-e923-4ab2-b49e-e6f93bb90991,luftbehandlingssystem som omhändertar luftföroreningar och värme från processer så nära källan som möjligt,,J30,Platsventilationssystem,575555,0,311314,"processventilationssystem
+",575555.0
+f2c1f2a4-25a2-4329-8d50-4406ae9e66b5,luftbehandlingssystem som aktiveras vid oönskade nivåer av luftföroreningar,,J40,Nödventilationssystem,575555,0,311315,"Nödluftssystem
+",575555.0
+73707c54-b501-4b74-a34e-8d7dc2c4665c,installationssystem som ombesörjer kommunikation mellan personer eller tekniska system,"Det funktionella systemet M Informations- och kommunikationssystem omfattar det som tidigare benämndes tele- och datakommunikationssystem.
+
+Kanalisation för informations- och kommunikationssystem ingår i S.BH Anordningar > Kanalisation.",M,Informations- och kommunikationssystem,575550,0,575558,"Bokningssystem, datanätverk, entrésignalsystem, fastighetsnät, kallelsesignaleringssystem, kösignalssystem, meddelandesystem, personkommunikationssystem, personsökningssystem, signalerande system, telefonisystem, resultatmarkeringssystem, tidsignaleringssystem, tidregistreringssystem",575550.0
+fac08462-b600-447c-8adf-9b0a74eb266e,kommunikationssystem för datatrafik,,M10,Datanätverk,575558,0,311323,"lokalt nätverk, LAN
+",575558.0
+53ab6b11-839a-4365-84d1-434a8362a9d2,informations- och kommunikationssystem mellan människor,,M20,Personkommunikationssystem,575558,0,311324,,575558.0
+899bb673-5791-468f-88f7-af80e1a6d218,personkommunikationssystem för dubbelriktad kommunikation,,M21,Telefonisystem,311324,0,312412,"hjälptelefonsystem, konferenssystem, nödtelefonsystem, porttelefonsystem, snabbtelefon, telefonsystem, telesystem, videokonferenssystem
+",311324.0
+665e27a1-b568-4c38-be80-c8cddb8edac3,personkommunikationssystem för enkelriktad överföring av ljud till specifika mottagare,,M22,Meddelandesystem,311324,0,312414,"ljudsystem, PA-system, skyltsystem, vägvisningssystem, orienteringssystem
+",311324.0
+8db7eeb8-4d5a-4e18-9ef8-f95a22e6c125,personkommunikationssystem för enkelriktad överföring av ljud och rörlig bild,,M23,Televisionssystem,311324,0,312384,,311324.0
+060f797e-0dc1-4f8c-9cd7-ac0883efdf20,personkommunikationssystem för enkelriktad överföring av ljud till icke specifika mottagare,,M24,Radiosystem,311324,0,312385,,311324.0
+95d9981c-6f40-4a83-b39d-e13f6e7318e8,informations- och kommunikationssystem för avgivande av signal,,M30,Signalerande system,575558,0,311325,,575558.0
+687910f6-d670-48a6-a1da-866ccaf2194d,signalsystem för sökning av person,,M31,Personsökningssystem,311325,0,312404,,311325.0
+55e505a6-2806-42d6-adab-45f18e94eeb2,signalsystem för behov av assistans,,M32,Kallelsesignaleringssystem,311325,0,312405,"RWC-larm, nödsignalssystem, överfallslarmsystem
+",311325.0
+b2065c15-759b-4b26-a137-2d4e2515fa04,signalsystem för bokning av resurs,,M33,Bokningssystem,311325,0,312407,,311325.0
+afe49c3b-0a49-48bc-97c7-a88443acaf19,signalsystem för entrésignal,,M34,Entrésignalsystem,311325,0,312408,"Rumssignal
+",311325.0
+5f082137-2f52-482e-adfd-25efa1f88942,signalsystem för resultatmarkering,,M35,Resultatmarkeringssystem,311325,0,312409,,311325.0
+e6330b10-8663-4a03-a03f-a0f722e4faae,signalsystem för kö,,M36,Kösignalssystem,311325,0,312411,"upptagetmarkering
+",311325.0
+956b0186-cb67-43cc-8da1-aeacd3ae3212,informations- och kommunikationssystem för tidgivning eller tidregistrering,,M40,Tidsrelaterat system,575558,0,311326,,575558.0
+bba5cbfc-4855-47c3-b99d-bd3b2ee2ae85,tidsrelaterat system för signalering,,M41,Tidsignaleringssystem,311326,0,312399,"rastsignalsystem, tidgivningssystem, väckningssystem
+",311326.0
+b79fa0ab-ec70-453d-8387-75902cdec041,tidsrelaterat system för registrering,,M42,Tidregistreringssystem,311326,0,312401,"närvarotidsystem, tidredovisningssystem för sport
+",311326.0
+0d04e3c3-c282-43f7-b6ae-89765da9b82e,installationssystem som transporterar gods eller personer,"Det funktionella systemet N Transportsystem omfattar aktiv transport av människor och gods, till exempel hissar, rulltrappor, rullband, lyftar och rörpost.",N,Transportsystem,575550,0,575559,"hissystem, rulltrappssystem, godstransportsystem",575550.0
+b061ce5e-2698-410a-8b34-bc4cd303a5f9,installationssystem som övervakar och/eller styr och reglerar tekniska system,"Det funktionella systemet L Automationssystem omfattar övergripande styrning, reglering och övervakning av byggnader och anläggningar. Andra funktionella system kan också ha egna sådana funktioner, som då ingår dess konstruktiva system LC Automationssystem. L är alltså ett överordnat system för ett eller flera LC.
+
+Kanalisation för automation ingår i S.BH Anordningar > Kanalisation.",L,Automationssystem,575550,0,575557,"Styr- och reglersystem, styr- och övervakningssystem, SÖ-system, fastighetsautomationssystem, anläggnings- och driftledningssystem, trafikledningssystem",575550.0
+850b19a8-462e-4be3-a733-2b5daafaca4a,automationssystem för byggnad,,L10,Fastighetsautomationssystem,575557,0,311319,"BMS, SCADA
+",575557.0
+82b555e9-b3c3-4dfe-a653-6c796ebb8f98,automationssystem för anläggning,,L20,Anläggnings- och driftledningssystem,575557,0,311320,,575557.0
+9ec1c938-7d68-4f3f-b404-1550b7988e9c,automationssystem för trafikanläggning,,L30,Trafikledningssystem,575557,0,311321,,575557.0
+36a733cc-f328-457f-b580-c0a56cdcfc64,automationssystem för industriell process,,L40,Processautomationssystem,575557,0,311342,,575557.0
+ac09c452-f0fc-4011-9147-c996e89082ee,installationssystem som tillhandahåller kyla och värme,"Gränsen mellan systemen för luftbehandling, kyla och värme kan dras på olika sätt. Strikt funktionellt hör kylande och värmande objekt till H10 Kylsystem respektive H20 Värmesystem även i de fall de är fysiskt integrerade i objekt som tillhör J Luftbehandlingssystem. Om detta också är praktiskt att göra får avgöras i det enskilda fallet.",H,Kyl- och värmesystem,575550,0,575554,"Kylsystem, värmesystem",575550.0
+1223b21a-066a-4c01-8250-d7b821da6433,kylsystem för kylning,,H10,Kylsystem,575554,0,311309,,575554.0
+bc081662-b02f-4c82-94ff-1f2a7f593fcd,kylsystem för kylning av utrymme,,H11,Kylsystem för utrymme,311309,0,312423,,311309.0
+42fd4b63-dbd5-47fa-9abd-d992444086d7,kylsystem för kylning av byggdel,,H12,Kylsystem för byggdel,311309,0,312424,,311309.0
+47fc7e3f-e867-429b-a15f-be7b30ad04f2,värmesystem för värmning,,H20,Värmesystem,575554,0,311310,,575554.0
+0435508b-8ae4-48e9-95d3-941b54eeca02,värmesystem för värmning av utrymme,,H21,Värmesystem för utrymme,311310,0,312421,,311310.0
+6dc64f24-e705-4190-9220-bf5854db1a70,värmesystem för värmning av byggdel,,H22,Värmesystem för byggdel,311310,0,312422,"Växelvärmningssystem
+",311310.0
+9518bb24-eb6f-4366-8dc8-dc0a45a5e85f,kyl- och värmesystem för kylning och värmning,,H30,Kombinerat kyl- och värmesystem,575554,0,311311,,575554.0
+5d259e6c-a51a-4008-adb1-9d5e979e0935,kyl- och värmesystem för kylning och värmning av utrymme,,H31,Kombinerat kyl- och värmesystem för utrymme,311311,0,312419,,311311.0
+ed64947c-f18e-48e5-8e32-9659fd8481c4,kyl- och värmesystem för kylning och värmning av byggdel,,H32,Kombinerat kyl- och värmesystem för byggdel,311311,0,312420,,311311.0
+9f62a9b6-795e-43e4-a149-9c8bcf3a8107,installationssystem som avlägsnar vätska eller avfall,,G,Avlopps- och avfallssystem,575550,0,575553,"Spillvattensystem, gråvattensystem, trafikavloppssystem, riskspillvattensystem, dagvattensystem, dränvattensystem, dräneringssystem, takavvattningssystem, centraldammsugningssystem, sopsugssystem, tvätthanteringssystem",575550.0
+039bd86e-e174-44f5-bd07-d2f4c4dc2fbb,avloppssystem för vatten som innehåller oönskade ämnen eller föremål,,G10,Spillvattensystem,575553,0,311302,,575553.0
+d37b3b0e-fed4-4623-86ff-dbffb01bd906,"spillvattensystem från byggnadsverk, potentiellt hälsovådligt",,G11,Normalspillvattensystem,311302,0,312437,,311302.0
+9a7835bc-b23a-4198-81da-0b768a84fca2,"spillvattensystem från byggnadsverk eller process, icke hälsovådligt",,G12,Gråvattensystem,311302,0,312438,,311302.0
+9d4a190c-971b-4b55-b1be-e303e85d1906,spillvattensystem från trafikeringsyta,,G13,Trafikavloppssystem,311302,0,312439,"Tunnelavloppssystem
+",311302.0
+b8a6c47f-dc69-4dc7-9dfc-e7a66e170dcc,spillvattensystem som kräver speciell rening,,G14,Riskspillvattensystem,311302,0,312440,,311302.0
+dad299f7-790e-49da-b8df-cadfe4736082,spillvattensystem från upplag,,G15,Lakvattensystem,311302,0,312441,,311302.0
+0e35478f-0f6e-44c3-91cb-97c11a8fb976,spillvattensystem från industriell process,,G16,Processpillvattensystem,311302,0,312371,,311302.0
+11338cee-5aab-4b3f-9df6-2a4fa297ffff,avloppssystem för överflödigt vatten,,G20,Avvattningssystem,575553,0,311303,,575553.0
+d74c301f-f71d-4967-afce-eff22ec6aa3a,överskottsvattensystem på markyta,,G21,Dagvattensystem,311303,0,312432,,311303.0
+841583b1-b70b-4d45-a29c-388a6da5a208,överskottsvattensystem i mark,,G22,Dränvattensystem,311303,0,312433,,311303.0
+010e5325-8840-4920-9b31-6613f1cc12f0,överskottsvattensystem på och i mark,,G23,Kombinerat dag- och dränvattensystem,311303,0,312434,,311303.0
+27ba8c11-1346-433a-8eff-32f8c36d88fc,överskottsvattensystem på takyta,,G24,Takavvattningssystem,311303,0,312435,,311303.0
+89e94888-2ba7-4b26-b160-16ae26d9b5ec,överskottsvattensystem för brokonstruktion,,G25,Avvattningssystem för bro,311303,0,312436,,311303.0
+3afe0aba-ff5d-426b-bc00-e189c94a471a,avloppssystem för förorenat vatten och överskottsvatten,,G40,Kombinerat avloppssystem,575553,0,311305,"samförlagda VA-system
+",575553.0
+32c77205-cd31-48be-93f1-aa411b904196,"kombinerat avloppsvattensystem för spill-, dag- och dränvatten",,G41,"Kombinerat spill-, dag- och dränvattensystem",311305,0,312428,,311305.0
+bde4ca80-b962-4842-be6c-112e4833c92d,kombinerat avloppsvattensystem för spill- och dränvatten,,G42,Kombinerat spill- och dränvattensystem,311305,0,312429,,311305.0
+452f40e9-66b1-4142-96da-ecefaaa172e0,avfallssystem för restprodukt eller annat som bedömts sakna värde och som därför har kasserats,,G50,Avfallshanteringssystem,575553,0,311306,"Sophanteringssystem, sopsugssystem
+",575553.0
+bcd6d2bb-77be-4e46-b7e5-4ae2aa3e3fc7,avfallshanteringssystem från matproduktion eller matlagning,,G51,Matavfallshanteringssystem,311306,0,312425,,311306.0
+37cff376-6dc0-40a7-9139-1cc2c67e1216,avfallshanteringssystem för slam,,G52,Slamhanteringssystem,311306,0,312426,,311306.0
+7f155d7f-7f8a-4b63-a16c-91ed5d1112e9,avfallshanteringssystem för potentiellt skadligt avfall,,G53,Riskavfallshanteringssystem,311306,0,312427,,311306.0
+6a6d4f8c-eced-43ff-83d4-372f788226d8,avfallshanteringssystem för icke sorterat avfall,,G54,Restavfallshanteringssystem,311306,0,312370,Sopsugssystem,311306.0
+24a4b25d-88af-4cfb-8e72-45df4444323d,avfallssystem för småpartiklar genom sugning,,G60,Centraldammsugningssystem,575553,0,311307,,575553.0
+40ad5677-dd82-443c-808d-6a9a81c9c516,avfallssystem för smutsiga textilier,,G70,Tvätthanteringssystem,575553,0,311308,Tvättsugssystem,575553.0
+46e9a7d3-c964-4471-8650-c8585047bda4,"installationssystem som tillför dricksvatten, tekniskt vatten eller vätska",,F,Vatten- och vätskesystem,575550,0,575552,"Råvattensystem, renvattensystem, tappkallvattensystem, tappvarmvattensystem, hetvattensystem, specialvattensystem, drivmedelssystem, bevattningssystem, grundvattensystem",575550.0
+2fb9cc47-2ca4-4169-a098-8621041b856c,vattensystem för obehandlat vatten,,F10,Råvattensystem,575552,0,311297,,575552.0
+0fdc51b4-658c-4883-8ff6-1ef88092624d,råvattenystem för insamling av regnvatten,,F11,System för insamling av regnvatten,311297,0,312449,,311297.0
+35bb94c7-9de1-4af6-bd80-1dcefcc6d89f,vattensystem för vatten tjänligt för mänskligt bruk,,F20,Tappvattensystem,575552,0,311304,renvatten,575552.0
+732944c0-2369-4d97-8834-016e5eeb652c,renvattensystem för ej uppvärmt vatten,,F21,Tappkallvattensystem,311304,0,312430,"dricksvatten
+",311304.0
+3da654b0-8b9b-4db5-a09c-697076d966bb,renvattensystem för uppvärmt vatten,,F22,Tappvarmvattensystem,311304,0,312431,,311304.0
+9e05a1b9-02fb-45bb-9021-d2e37d9a7448,vattensystem för speciell användning,,F30,Specialvattensystem,575552,0,311298,,575552.0
+54977c44-34d3-4d74-a55a-df49de53994b,specialvattensystem för vatten med sänkt mineralhalt,,F31,System för avhärdat vatten,311298,0,312445,,311298.0
+7fe7c9a1-145c-48ad-942d-0192358a99cf,specialvattensystem för återkondenserad vattenånga,,F32,System för destillerat vatten,311298,0,312446,,311298.0
+352338ab-6298-4ef6-9f57-d360fdd10ef3,specialvattensystem för vatten som passerat jonbytarkolonn,,F33,System för avjoniserat vatten,311298,0,312447,,311298.0
+fde0a067-5986-4a8d-af4d-2fbae02ffc82,specialvattensystem för vatten med en temperatur över 100 °C ,,F34,Hetvattensystem,311298,0,312448,,311298.0
+667f0b71-0a03-4be0-a366-1a2bfd4696c0,vätskesystem för bränsle,,F40,Drivmedelssystem,575552,0,311299,,575552.0
+f1478182-c790-48db-bdec-1b0b4b7cc3c8,drivmedelssystem för bensin,,F41,Bensinsystem,311299,0,312442,,311299.0
+900f4172-b814-4ef1-88e9-b4901e8aa21e,drivmedelssystem för olja,,F42,Oljesystem,311299,0,312443,"dieselolja
+",311299.0
+c08f57d1-81bc-42a5-bf9a-4889dddec672,drivmedelssystem för fotogen,,F43,Fotogensystem,311299,0,312444,,311299.0
+c6f07744-a701-4d21-bd80-cee4cac5b607,vattensystem för bevattning,,F50,Bevattningssystem,575552,0,311300,,575552.0
+723f6bc7-40a8-4e98-9aea-5f7ab65ccc3b,vattensystem för infiltration i mark,,F60,Grundvattensystem,575552,0,311301,"Infiltrationsvattensystem
+",575552.0
+f056a18a-7be0-4cd3-aab4-ed078ed8ebf7,installationssystem som tillför tekniska gaser eller teknisk luft,,E,Gas- och luftsystem,575550,0,575551,"Energigassystem, processgassystem, medicinsk gassystem, specialgassystem, luftsystem, ångsystem, vakuumsystem",575550.0
+35e41052-bd04-4094-a371-8f382edb3193,gassystem för utvinning av energi,,E10,Energigassystem,575551,0,311288,"biogas, naturgas, gasol, vätgas
+",575551.0
+3396f17b-af91-4c2b-a638-0cf7db396d25,energigassystem för naturgas,,E11,Naturgassystem,311288,0,312377,,311288.0
+48d5ec7b-ddf9-41d9-a4cc-fc9fc6cc9b63,energigassystem för stadsgas,,E12,Stadsgassystem,311288,0,312378,,311288.0
+e1804bb7-d67c-4723-a4d8-f2f467b1eaa6,energigassystem för gasol,,E13,Gasolsystem,311288,0,312379,,311288.0
+a3cb5acf-d2ba-4a60-bd58-b8682be7ab7b,energigassystem för biogas,,E14,Biogassystem,311288,0,312380,,311288.0
+d9671723-a0a9-42c7-8222-6e88369ddffb,gassystem för användning i industriell process,,E20,Processgassystem,575551,0,311289,,575551.0
+67b74cbe-8c04-42fe-953b-6b30205f21f3,gassystem för medicinskt ändamål,,E30,Medicinsk gassystem,575551,0,311290,,575551.0
+68352fb5-993d-40c2-a524-f40c37a7452a,medicinsk gassystem för andningsluft,,E31,Andningsluftssystem,311290,0,312381,,311290.0
+366ede44-8311-4d4f-aa6b-b3d1007ce645,medicinsk gassystem för andningsoxygen,,E32,Andningsoxygenssystem,311290,0,312382,,311290.0
+9b27a9ca-f8e6-487e-89c4-c92b14a09347,medicinsk gassystem för lustgas,,E33,Lustgassystem,311290,0,312383,,311290.0
+7ac2d55f-9621-4d3d-844d-e329284d62d1,gassystem för speciellt ändamål,,E40,Specialgassystem,575551,0,311291,"koldioxid, kväve
+",575551.0
+2b140eb1-b9db-4d1a-a3d0-d6198092c01a,luftsystem,,E50,Luftsystem,575551,0,311292,,575551.0
+edbdb048-5cf9-4894-962f-22e5612d9a85,luftsystem för trycksatt luft,,E51,Tryckluftssystem,311292,0,312454,,311292.0
+2c88cb26-1b7e-47f0-bf4c-5772a46a067d,luftsystem för renad luft,,E52,Renluftssystem,311292,0,312455,,311292.0
+6d88ab6e-d5ed-4f17-97b5-8f7a35eb117b,gas- och luftsystem för vatten i gasform,,E60,Ångsystem,575551,0,311295,,575551.0
+c53d550e-3261-46f2-8e9d-b318bbeac176,luftsystem för undertryck,,E70,Vakuumsystem,575551,0,311296,,575551.0
+888453d8-1742-4743-b0d5-8746d043755d,installationssystem för ljushantering,"Q Belysnings- och dagsljussystem omfattar – förutom belysning som drivs av elektricitet, gas och vätska – metoder för att få in dagsljus i utrymmen, till exempel ljusschakt, ljustunnlar, speglar och optiska fibrer. Fönster ingår i B Väggsystem och D Yttertakssystem.
+
+Gränsdragningen mellan försörjande system för el, gas och vätska dras enklast vid anslutningen till armaturen. Belysningssystemet omfattar då endast armaturer och ljuskällor. Andra gränsdragningar är möjliga att göra, till exempel att Q omfattar också kablar och ledningar från gruppcentral eller motsvarande fördelningspunkt.
+
+Belysningsstolpar, stegar och andra upphängningsanordningar ingår i S.BH Anordningar > Kanalisation.",Q,Belysnings- och dagsljussystem,575550,0,575561,"allmänbelysningssystem, platsbelysningssystem, nödbelysningssystem, reservbelysningssystem, dekorationsbelysningssystem, elbelysning, dagsljussystem, solavskärmning, mörkläggning",575550.0
+8874724a-d869-4d72-87e0-6d5057158c18,belysnings- och dagsljussystem för allmän aktivitet,,Q10,Allmänbelysningssystem,575561,0,311330,"Industri- och hamnbelysning, sport- och friluftsanläggningsbelysning, trafikbelysning",575561.0
+c06f72d3-db5d-4221-b411-cd392edb110c,allmänbelysningssystem för byggnadsutrymme,,Q11,Allmänbelysningssystem för byggnad,311330,0,312386,"rumsbelysning, balkongbelysning",311330.0
+0ff36d54-23ea-4c8c-ac1d-1469afe07c0a,allmänbelysningssystem för utomhusutrymme,,Q12,Allmänbelysningssystem för utemiljö,311330,0,312387,gårdsbelysning,311330.0
+eb7b451d-3567-4074-801c-9dcc63b4e1f7,allmänbelysningssystem för trafikanläggning,,Q13,Allmänbelysningssystem för trafik,311330,0,312388,"Belysning av platta, cykelvägsbelysning, gångbanebelysning, spårbelysning, tunnelbelysning, vägbelysning
+",311330.0
+c4171963-1772-4f5c-bee7-6eb184fd7e85,allmänbelysningssystem för industri- och hamnområde,,Q14,Allmänbelysningssystem för industri och hamn,311330,0,312389,,311330.0
+6faaa001-34ff-4671-a894-f8c9877ad889,allmänbelysningssystem för sport- och friluftsområde,,Q15,Allmänbelysningssystem för sport- och friluftsanläggning,311330,0,312390,,311330.0
+6408988b-009a-4640-bccc-e838a95a9350,belysnings- och dagsljussystem för speciell aktivitet,,Q20,Platsbelysningssystem,575561,0,311331,"Arbetsplatsbelysning
+",575561.0
+202dd745-72fd-4651-bd35-7dffbf4059c0,platsbelysningssystem för byggnadsutrymme,,Q21,Platsbelysningssystem för byggnad,311331,0,312372,arbetsplatsbelysning,311331.0
+11fe0637-cbcd-4124-9e7a-e75aa6f8e066,platsbelysningssystem för trafikanläggning,,Q22,Platsbelysningssystem för trafik,311331,0,312373,"belysning vid övergångsställe, belysning vid cirkulationsplats",311331.0
+19957fec-6bc6-43cd-8507-dfad838976b1,platsbelysningssystem för främjande av organisk tillväxt,,Q23,Platsbelysningssystem för odling,311331,0,312368,,311331.0
+7b87ea5b-7a68-4127-a86d-a84b5b0e948a,belysningssystem som tänds automatiskt vid fallerande allmänbelysning,,Q30,Nödbelysningssystem,575561,0,311332,"Utrymningsbelysning
+",575561.0
+6d2155e7-b6bc-4102-9bab-ab25c178eea4,belysningssystem som tillfällig ersättning för ordinarie system,,Q40,Reservbelysningssystem,575561,0,311333,,575561.0
+a24c243e-3711-4a98-bb31-c251531b7456,belysnings- och dagsljussystem för estetiska syften,,Q50,Dekorationsbelysningssystem,575561,0,311334,,575561.0
+fa07d42d-d6f3-44e5-a3c0-16bf596b7525,belysningssystem för vägledande skyltning även vid fallerande allmänbelysning,,Q60,Belysningssystem för vägledande skyltning,575561,0,311341,,575561.0
+0cdaf880-318a-4510-a2f2-cfdb2a0ad269,installationssystem som skyddar mot fara och skada,,P,Säkerhets- och skyddssystem,575550,0,575560,"brandsäkerhetssystem, skalskyddssystem, personsäkerhetssystem, elsäkerhetssystem",575550.0
+7769b8e7-e108-4922-ae4d-011d888340c9,säkerhets- och skyddssystem mot brand,,P10,Brandsäkerhetssystem,575560,0,311338,,575560.0
+943928ae-c854-44fc-8f92-d132a40a82aa,säkerhets- och skyddssystem mot oönskad personrörelse,,P20,Personrörelseskyddssystem,575560,0,311335,"Passagekontrollsystem, skalskyddslarm, inbrottslarm, rymningslarm, övervakningssystem",575560.0
+9affc28c-efb7-4fab-bde1-65a33b205d1e,säkerhets- och skyddssystem mot personskada,,P30,Personsäkerhetssystem,575560,0,311336,,575560.0
+4d16dd7a-947d-40c1-86d0-ca43abe4b1ae,säkerhets- och skyddssystem mot elskador,,P40,Elsäkerhetssystem,575560,0,311337,,575560.0
+5ca5f187-6509-46af-acc9-9fec50de20eb,installationssystem som tillför elektrisk energi,"Det funktionella systemet K Elkraftsystem består typiskt av de konstruktiva systemen HG Elkraftförsörjningssystem – via egen produktion eller el-leverantör – och JK Elkraftsdistributionssystem.  
+
+K Elkraftsystem försörjer många av de övriga installationssystemen. Gränsen mellan systemen ligger vanligen i den punkt där elkabeln ansluts till det el-användande objektet. Detta gäller även elektrisk belysning, där anslutningen görs i en armatur. Andra gränsdragningar är möjliga att göra, till exempel att belysningssystemet omfattar också elkablar från gruppcentral.
+
+Kanalisation för el ingår i S.BH Anordningar > Kanalisation.",K,Elkraftssystem,575550,0,575556,"reservkraftssystem, nödkraftssystem",575550.0
+0f0ab7c1-f6cf-4056-9ac7-fad211a57834,elkraftssystem för ordinarie drift,,K10,Primärt elkraftssystem,575556,0,311316,,575556.0
+5703b64d-60fd-4772-8d83-3c07357ec75a,elkraftssystem för kontinuerlig drift under störd extern försörjning,,K20,Avbrottsfritt elkraftssystem,575556,0,311317,"UPS, MVL, mycket viktig last",575556.0
+2245b191-2901-44aa-9de3-9c451022a730,elkraftssystem för drift under störd extern försörjning av delar nödvändiga för hälsa och säkerhet samt för att undvika skador,,K30,Nödkraftssystem,575556,0,311318,"
+",575556.0
+83c1669c-7f0f-4ead-a9b3-f9755a8ed62b,elkraftssystem för drift under störd extern försörjning av andra än personsäkerhetsskäl,,K40,Reservkraftssystem,575556,0,311340,,575556.0
+9708a1a3-04e3-4573-8f82-1a7e8bf1b1bf,funktionellt system som utrustar utrymmen,"Det finns tre grupper av funktionella system (siffrorna 1, 2 och 3 betyder dock ingenting, utan är endast en ordningsföljd): 
+
+1. ""utrymmesskapande system"" som ger byggnadsverket sin form, till exempel väggar, bjälklag och överbyggnader.
+2. ""installationssystem"" som exempelvis försörjer med media, som värmer och kyler, som trans­porterar och som styr och övervakar.
+3. ""utrustande system"" som förser byggnadsverket och dess utrymmen med inredning och utrustning.",3,Utrustande system,0,0,575562,,
+a798cf26-373a-4783-addd-addcc9ba5d3a,utrustande system som förser en trafikanläggning med anordningar för styrning och reglering av trafik,Ej i ISO/IEC 81346-12:2018.,T,Trafikanordningar,575562,0,575564,"trafikutrustning, bommar, trafiksignaler, trafikskyltar, trafiksignalssystem, trafikavstängningssystem, hastighetsövervakningssystem, fordonskontrollsystem, flygplatsljussystem, flygtrafikljussystem",575562.0
+37a5b7b0-6cb2-4bed-ba99-ec67cbfed0a1,trafikanordningar för signalering till väg- och järnvägstrafikant,,T10,Trafiksignaleringssystem,575564,0,311322,"spårtrafiksignal, trafikljus, trafikskyltning, vägtrafiksignal, vägmärken,  vägmarkeringar",575564.0
+c88998b7-e745-4dee-a521-9617e6f3c4a2,trafiksignalsystem för allmän väg- och järnvägstrafik,,T11,Fordonstrafiksignalssystem,311322,0,312413,Vägskyddsanläggning,311322.0
+31ca253c-1816-442b-928f-5529748eef58,trafiksignalsystem för specifika trafikslag,,T12,Selektivt styrd trafiksignalering,311322,0,312403,,311322.0
+2f872fa1-7463-4257-864a-53f65daeeaf0,trafiksignalsystem för påfartstrafik,,T13,Påfartsregleringssystem,311322,0,312406,Rampstyrning,311322.0
+19d37647-ae82-4b0d-a56d-91b4e6ee4395,trafiksignalsystem för gång- och cykeltrafik,,T14,Gång- och cykeltrafiksignalssystem,311322,0,312410,,311322.0
+419c89ac-b91b-4d13-bcf1-7ec96dd7afa3,trafiksignalsystem som varnar för köbildning,,T15,Kövarningssystem,311322,0,312400,,311322.0
+54bcaa7e-fa4c-485e-ab52-3b9bf70ffc14,trafiksignalsystem för ändring av riktning av körfält,,T16,Reversibla körfält,311322,0,312402,,311322.0
+a4660afc-d92d-4a02-bc25-869acb8e2b0b,trafiksignalsystem som informerar om trafikförutsättningar,,T17,Trafikvarningssystem,311322,0,312374,,311322.0
+465255cb-7fd9-43cf-84ed-21a0ca6edb45,trafikanordningar för avstängning av trafik ,,T20,Trafikavstängningssystem,575564,0,311327,,575564.0
+b3ee8052-701b-46a8-8ca5-815c9afb3327,trafikanordningar för övervakning av fordonshastighet,,T30,Hastighetsövervakningssystem,575564,0,311328,,575564.0
+ee135beb-2aa9-4a34-9635-d135399e1f54,hastighetövervakningssystem  för fordon,,T31,Automatiskt hastighetskontrollsystem,311328,0,312396,"ATK, automatiskt trafikkontrollsystem, fartkamerasystem, hastighetsövervakning",311328.0
+2c4159b6-62da-4cfa-b5d1-7a7ca62efb55,"hastighetsövervakningssystem för fordon, kapabelt att sänka hastigheten",,T32,System för hastighetsövervakning och hastighetsreducering,311328,0,312397,"Automatic Train Control (ATC), Automatic Train Protection (ATP), European Train Control System (ETCS)",311328.0
+8c76fbd9-5b89-427d-8a04-003b9b336c88,hastighetsövervakningssystem för påminnelse om gällande hastighetsgräns,,T33,Hastighetspåminnelsesystem,311328,0,312398,,311328.0
+32e4aedd-dd0c-41e3-a5d9-6bab567eddc0,trafikanordningar för kontroll av fordon ,,T40,Fordonskontrollsystem,575564,0,311329,,575564.0
+481827cc-407b-47f8-8cb2-ca19b8955852,fordonskontrollsystem för identifiering,,T41,Fordonsidentifieringssystem,311329,0,312391,,311329.0
+3aa2f4ab-a6c2-4f3b-9b13-350242d61365,fordonskontrollsystem för närvaro,,T42,Fordonsdetekteringssystem,311329,0,312392,"Spökförardetektering, trafikmätningssystem, trafikräkning",311329.0
+989e1f9a-2cfb-4081-8873-95a9f6ac8771,fordonskontrollsystem för skada,,T43,Fordonsskadedetekteringssystem,311329,0,312393,,311329.0
+7bde0599-8891-4f1f-aac0-b64e975d5141,fordonskontrollsystem för bromsar,,T44,Fordonsbromskontrollsystem,311329,0,312394,,311329.0
+31d7307e-1dd7-4f56-9cae-1581f1c6c5ba,fordonskontrollsystem för vikt,,T45,Fordonsviktkontrollsystem,311329,0,312395,,311329.0
+d68decc6-0e94-44e1-97a9-a65210362c31,"utrustande system som förser ett byggnadsverk och dess utrymmen med inredning, tillbehör och utrustning","Det funktionella systemet S Anordningar omfattar alla typer av kompletteringar till byggdelar och utrymmen som bidrar till tänkt verksamhet.
+
+Här ingår också kanalisation, som gör att ledningar i installationer förläggs på säkert sätt, och så att de inte inkräktar på verksamheten.",S,Anordningar,575562,0,575563,"Bruksanordningar, sakvaror, skydds- och tillträdesanordningar, produktionsanordningar, underhållsanordningar, klimatavskärmande anordningar, lyftanordningar, rumsskapande anordningar, estetiska anordningar, kompletteringar, anläggningskompletteringar, rumskompletteringar, möblering, inredning, utrustning, skyltar (utom trafikskyltar)",575562.0
